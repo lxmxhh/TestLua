@@ -1,0 +1,2145 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AC6FB1F180E996B004C840B /* libbox2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAFF180E9839004C840B /* libbox2d Mac.a */; };
+		1AC6FB20180E996B004C840B /* libchipmunk Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAFD180E9839004C840B /* libchipmunk Mac.a */; };
+		1AC6FB21180E996B004C840B /* libcocos2dx Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAF9180E9839004C840B /* libcocos2dx Mac.a */; };
+		1AC6FB22180E996B004C840B /* libcocos2dx-extensions Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAFB180E9839004C840B /* libcocos2dx-extensions Mac.a */; };
+		1AC6FB23180E996B004C840B /* libCocosDenshion Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FB01180E9839004C840B /* libCocosDenshion Mac.a */; };
+		1AC6FB2E180E99EB004C840B /* libbox2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FB0D180E9839004C840B /* libbox2d iOS.a */; };
+		1AC6FB2F180E99EB004C840B /* libchipmunk iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FB0B180E9839004C840B /* libchipmunk iOS.a */; };
+		1AC6FB30180E99EB004C840B /* libcocos2dx iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FB07180E9839004C840B /* libcocos2dx iOS.a */; };
+		1AC6FB31180E99EB004C840B /* libcocos2dx-extensions iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FB09180E9839004C840B /* libcocos2dx-extensions iOS.a */; };
+		1AC6FB32180E99EB004C840B /* libCocosDenshion iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FB0F180E9839004C840B /* libCocosDenshion iOS.a */; };
+		1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 503AE0F617EB97AB00D1A890 /* Icon.icns */; };
+		503AE10017EB989F00D1A890 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FB17EB989F00D1A890 /* AppController.mm */; };
+		503AE10117EB989F00D1A890 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FC17EB989F00D1A890 /* main.m */; };
+		503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FF17EB989F00D1A890 /* RootViewController.mm */; };
+		503AE10517EB98FF00D1A890 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 503AE10317EB98FF00D1A890 /* main.cpp */; };
+		503AE11217EB99EE00D1A890 /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 503AE11117EB99EE00D1A890 /* libcurl.dylib */; };
+		503AE11B17EB9C5A00D1A890 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503AE11A17EB9C5A00D1A890 /* IOKit.framework */; };
+		5087E75717EB910900C73F5D /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */; };
+		5087E76317EB910900C73F5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		5087E76517EB910900C73F5D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		5087E76717EB910900C73F5D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
+		5087E76817EB910900C73F5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
+		5087E76917EB910900C73F5D /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620B132DFF330009C878 /* OpenAL.framework */; };
+		5087E76A17EB910900C73F5D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
+		5087E76B17EB910900C73F5D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
+		5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77217EB970100C73F5D /* Default-568h@2x.png */; };
+		5087E77E17EB970100C73F5D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77317EB970100C73F5D /* Default.png */; };
+		5087E77F17EB970100C73F5D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77417EB970100C73F5D /* Default@2x.png */; };
+		5087E78017EB970100C73F5D /* Icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77517EB970100C73F5D /* Icon-114.png */; };
+		5087E78117EB970100C73F5D /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77617EB970100C73F5D /* Icon-120.png */; };
+		5087E78217EB970100C73F5D /* Icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77717EB970100C73F5D /* Icon-144.png */; };
+		5087E78317EB970100C73F5D /* Icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77817EB970100C73F5D /* Icon-152.png */; };
+		5087E78417EB970100C73F5D /* Icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77917EB970100C73F5D /* Icon-57.png */; };
+		5087E78517EB970100C73F5D /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77A17EB970100C73F5D /* Icon-72.png */; };
+		5087E78617EB970100C73F5D /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 5087E77B17EB970100C73F5D /* Icon-76.png */; };
+		5087E78917EB974C00C73F5D /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5087E78817EB974C00C73F5D /* AppKit.framework */; };
+		5087E78B17EB975400C73F5D /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5087E78A17EB975400C73F5D /* OpenGL.framework */; };
+		50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF629217ECD46A001EB2F8 /* Icon-40.png */; };
+		50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF629317ECD46A001EB2F8 /* Icon-58.png */; };
+		50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF629417ECD46A001EB2F8 /* Icon-80.png */; };
+		50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF629517ECD46A001EB2F8 /* Icon-100.png */; };
+		50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF62A017ECD613001EB2F8 /* Icon-29.png */; };
+		50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF62A117ECD613001EB2F8 /* Icon-50.png */; };
+		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
+		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
+		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
+		D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620B132DFF330009C878 /* OpenAL.framework */; };
+		D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
+		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
+		D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B0611A1803AB670077942B /* CoreMotion.framework */; };
+		E874114318DF3E4800CE5E16 /* lua_assetsmanager_test_sample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E874114118DF3E4800CE5E16 /* lua_assetsmanager_test_sample.cpp */; };
+		E874114418DF3E4800CE5E16 /* lua_assetsmanager_test_sample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E874114118DF3E4800CE5E16 /* lua_assetsmanager_test_sample.cpp */; };
+		E874114D18DF408B00CE5E16 /* LuaObjectCBridgeTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = E874114C18DF408B00CE5E16 /* LuaObjectCBridgeTest.mm */; };
+		E874114E18DF408B00CE5E16 /* LuaObjectCBridgeTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = E874114C18DF408B00CE5E16 /* LuaObjectCBridgeTest.mm */; };
+		E874115018DF421A00CE5E16 /* libluabindings iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FB13180E9839004C840B /* libluabindings iOS.a */; };
+		E87411BF18DF42E500CE5E16 /* AccelerometerTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874115318DF42E500CE5E16 /* AccelerometerTest.lua */; };
+		E87411C018DF42E500CE5E16 /* AccelerometerTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874115318DF42E500CE5E16 /* AccelerometerTest.lua */; };
+		E87411C118DF42E500CE5E16 /* ActionManagerTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874115518DF42E500CE5E16 /* ActionManagerTest.lua */; };
+		E87411C218DF42E500CE5E16 /* ActionManagerTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874115518DF42E500CE5E16 /* ActionManagerTest.lua */; };
+		E87411C318DF42E500CE5E16 /* ActionsEaseTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874115718DF42E500CE5E16 /* ActionsEaseTest.lua */; };
+		E87411C418DF42E500CE5E16 /* ActionsEaseTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874115718DF42E500CE5E16 /* ActionsEaseTest.lua */; };
+		E87411C518DF42E500CE5E16 /* ActionsProgressTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874115918DF42E500CE5E16 /* ActionsProgressTest.lua */; };
+		E87411C618DF42E500CE5E16 /* ActionsProgressTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874115918DF42E500CE5E16 /* ActionsProgressTest.lua */; };
+		E87411C718DF42E500CE5E16 /* ActionsTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874115B18DF42E500CE5E16 /* ActionsTest.lua */; };
+		E87411C818DF42E500CE5E16 /* ActionsTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874115B18DF42E500CE5E16 /* ActionsTest.lua */; };
+		E87411C918DF42E500CE5E16 /* AssetsManagerModule.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874115D18DF42E500CE5E16 /* AssetsManagerModule.lua */; };
+		E87411CA18DF42E500CE5E16 /* AssetsManagerModule.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874115D18DF42E500CE5E16 /* AssetsManagerModule.lua */; };
+		E87411CB18DF42E500CE5E16 /* AssetsManagerTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874115E18DF42E500CE5E16 /* AssetsManagerTest.lua */; };
+		E87411CC18DF42E500CE5E16 /* AssetsManagerTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874115E18DF42E500CE5E16 /* AssetsManagerTest.lua */; };
+		E87411CD18DF42E500CE5E16 /* BugsTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874116018DF42E500CE5E16 /* BugsTest.lua */; };
+		E87411CE18DF42E500CE5E16 /* BugsTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874116018DF42E500CE5E16 /* BugsTest.lua */; };
+		E87411CF18DF42E500CE5E16 /* ClickAndMoveTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874116218DF42E500CE5E16 /* ClickAndMoveTest.lua */; };
+		E87411D018DF42E500CE5E16 /* ClickAndMoveTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874116218DF42E500CE5E16 /* ClickAndMoveTest.lua */; };
+		E87411D118DF42E500CE5E16 /* CocosDenshionTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874116418DF42E500CE5E16 /* CocosDenshionTest.lua */; };
+		E87411D218DF42E500CE5E16 /* CocosDenshionTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874116418DF42E500CE5E16 /* CocosDenshionTest.lua */; };
+		E87411D318DF42E500CE5E16 /* CocoStudioArmatureTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874116718DF42E500CE5E16 /* CocoStudioArmatureTest.lua */; };
+		E87411D418DF42E500CE5E16 /* CocoStudioArmatureTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874116718DF42E500CE5E16 /* CocoStudioArmatureTest.lua */; };
+		E87411D518DF42E500CE5E16 /* CocoStudioGUITest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874116918DF42E500CE5E16 /* CocoStudioGUITest.lua */; };
+		E87411D618DF42E500CE5E16 /* CocoStudioGUITest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874116918DF42E500CE5E16 /* CocoStudioGUITest.lua */; };
+		E87411D718DF42E500CE5E16 /* CocoStudioSceneTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874116B18DF42E500CE5E16 /* CocoStudioSceneTest.lua */; };
+		E87411D818DF42E500CE5E16 /* CocoStudioSceneTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874116B18DF42E500CE5E16 /* CocoStudioSceneTest.lua */; };
+		E87411D918DF42E500CE5E16 /* acts.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874116D18DF42E500CE5E16 /* acts.lua */; };
+		E87411DA18DF42E500CE5E16 /* acts.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874116D18DF42E500CE5E16 /* acts.lua */; };
+		E87411DB18DF42E500CE5E16 /* cons.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874116E18DF42E500CE5E16 /* cons.lua */; };
+		E87411DC18DF42E500CE5E16 /* cons.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874116E18DF42E500CE5E16 /* cons.lua */; };
+		E87411DD18DF42E500CE5E16 /* eventDef.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874116F18DF42E500CE5E16 /* eventDef.lua */; };
+		E87411DE18DF42E500CE5E16 /* eventDef.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874116F18DF42E500CE5E16 /* eventDef.lua */; };
+		E87411DF18DF42E500CE5E16 /* CocoStudioTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874117018DF42E500CE5E16 /* CocoStudioTest.lua */; };
+		E87411E018DF42E500CE5E16 /* CocoStudioTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874117018DF42E500CE5E16 /* CocoStudioTest.lua */; };
+		E87411E118DF42E500CE5E16 /* controller.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874117118DF42E500CE5E16 /* controller.lua */; };
+		E87411E218DF42E500CE5E16 /* controller.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874117118DF42E500CE5E16 /* controller.lua */; };
+		E87411E318DF42E500CE5E16 /* CurrentLanguageTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874117318DF42E500CE5E16 /* CurrentLanguageTest.lua */; };
+		E87411E418DF42E500CE5E16 /* CurrentLanguageTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874117318DF42E500CE5E16 /* CurrentLanguageTest.lua */; };
+		E87411E518DF42E500CE5E16 /* DrawPrimitivesTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874117518DF42E500CE5E16 /* DrawPrimitivesTest.lua */; };
+		E87411E618DF42E500CE5E16 /* DrawPrimitivesTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874117518DF42E500CE5E16 /* DrawPrimitivesTest.lua */; };
+		E87411E718DF42E500CE5E16 /* EffectsAdvancedTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874117718DF42E500CE5E16 /* EffectsAdvancedTest.lua */; };
+		E87411E818DF42E500CE5E16 /* EffectsAdvancedTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874117718DF42E500CE5E16 /* EffectsAdvancedTest.lua */; };
+		E87411E918DF42E500CE5E16 /* EffectsName.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874117918DF42E500CE5E16 /* EffectsName.lua */; };
+		E87411EA18DF42E500CE5E16 /* EffectsName.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874117918DF42E500CE5E16 /* EffectsName.lua */; };
+		E87411EB18DF42E500CE5E16 /* EffectsTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874117A18DF42E500CE5E16 /* EffectsTest.lua */; };
+		E87411EC18DF42E500CE5E16 /* EffectsTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874117A18DF42E500CE5E16 /* EffectsTest.lua */; };
+		E87411ED18DF42E500CE5E16 /* CocosBuilderTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874117C18DF42E500CE5E16 /* CocosBuilderTest.lua */; };
+		E87411EE18DF42E500CE5E16 /* CocosBuilderTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874117C18DF42E500CE5E16 /* CocosBuilderTest.lua */; };
+		E87411EF18DF42E500CE5E16 /* ExtensionTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874117D18DF42E500CE5E16 /* ExtensionTest.lua */; };
+		E87411F018DF42E500CE5E16 /* ExtensionTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874117D18DF42E500CE5E16 /* ExtensionTest.lua */; };
+		E87411F118DF42E500CE5E16 /* WebProxyTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874117E18DF42E500CE5E16 /* WebProxyTest.lua */; };
+		E87411F218DF42E500CE5E16 /* WebProxyTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874117E18DF42E500CE5E16 /* WebProxyTest.lua */; };
+		E87411F318DF42E500CE5E16 /* FontTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874118018DF42E500CE5E16 /* FontTest.lua */; };
+		E87411F418DF42E500CE5E16 /* FontTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874118018DF42E500CE5E16 /* FontTest.lua */; };
+		E87411F518DF42E500CE5E16 /* helper.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874118118DF42E500CE5E16 /* helper.lua */; };
+		E87411F618DF42E500CE5E16 /* helper.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874118118DF42E500CE5E16 /* helper.lua */; };
+		E87411F718DF42E500CE5E16 /* IntervalTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874118318DF42E500CE5E16 /* IntervalTest.lua */; };
+		E87411F818DF42E500CE5E16 /* IntervalTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874118318DF42E500CE5E16 /* IntervalTest.lua */; };
+		E87411F918DF42E500CE5E16 /* KeypadTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874118518DF42E500CE5E16 /* KeypadTest.lua */; };
+		E87411FA18DF42E500CE5E16 /* KeypadTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874118518DF42E500CE5E16 /* KeypadTest.lua */; };
+		E87411FB18DF42E500CE5E16 /* LabelTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874118718DF42E500CE5E16 /* LabelTest.lua */; };
+		E87411FC18DF42E500CE5E16 /* LabelTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874118718DF42E500CE5E16 /* LabelTest.lua */; };
+		E87411FD18DF42E500CE5E16 /* LabelTestNew.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874118918DF42E500CE5E16 /* LabelTestNew.lua */; };
+		E87411FE18DF42E500CE5E16 /* LabelTestNew.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874118918DF42E500CE5E16 /* LabelTestNew.lua */; };
+		E87411FF18DF42E500CE5E16 /* LayerTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874118B18DF42E500CE5E16 /* LayerTest.lua */; };
+		E874120018DF42E500CE5E16 /* LayerTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874118B18DF42E500CE5E16 /* LayerTest.lua */; };
+		E874120118DF42E500CE5E16 /* LuaBridgeTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874118D18DF42E500CE5E16 /* LuaBridgeTest.lua */; };
+		E874120218DF42E500CE5E16 /* LuaBridgeTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874118D18DF42E500CE5E16 /* LuaBridgeTest.lua */; };
+		E874120318DF42E500CE5E16 /* mainMenu.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874118E18DF42E500CE5E16 /* mainMenu.lua */; };
+		E874120418DF42E500CE5E16 /* mainMenu.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874118E18DF42E500CE5E16 /* mainMenu.lua */; };
+		E874120518DF42E500CE5E16 /* MenuTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874119018DF42E500CE5E16 /* MenuTest.lua */; };
+		E874120618DF42E500CE5E16 /* MenuTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874119018DF42E500CE5E16 /* MenuTest.lua */; };
+		E874120718DF42E500CE5E16 /* MotionStreakTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874119218DF42E500CE5E16 /* MotionStreakTest.lua */; };
+		E874120818DF42E500CE5E16 /* MotionStreakTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874119218DF42E500CE5E16 /* MotionStreakTest.lua */; };
+		E874120918DF42E500CE5E16 /* NewEventDispatcherTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874119418DF42E500CE5E16 /* NewEventDispatcherTest.lua */; };
+		E874120A18DF42E500CE5E16 /* NewEventDispatcherTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874119418DF42E500CE5E16 /* NewEventDispatcherTest.lua */; };
+		E874120B18DF42E500CE5E16 /* NodeTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874119618DF42E500CE5E16 /* NodeTest.lua */; };
+		E874120C18DF42E500CE5E16 /* NodeTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874119618DF42E500CE5E16 /* NodeTest.lua */; };
+		E874120D18DF42E500CE5E16 /* OpenGLTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874119818DF42E500CE5E16 /* OpenGLTest.lua */; };
+		E874120E18DF42E500CE5E16 /* OpenGLTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874119818DF42E500CE5E16 /* OpenGLTest.lua */; };
+		E874120F18DF42E500CE5E16 /* ParallaxTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874119A18DF42E500CE5E16 /* ParallaxTest.lua */; };
+		E874121018DF42E500CE5E16 /* ParallaxTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874119A18DF42E500CE5E16 /* ParallaxTest.lua */; };
+		E874121118DF42E500CE5E16 /* ParticleTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874119C18DF42E500CE5E16 /* ParticleTest.lua */; };
+		E874121218DF42E500CE5E16 /* ParticleTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874119C18DF42E500CE5E16 /* ParticleTest.lua */; };
+		E874121318DF42E500CE5E16 /* PerformanceSpriteTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874119E18DF42E500CE5E16 /* PerformanceSpriteTest.lua */; };
+		E874121418DF42E500CE5E16 /* PerformanceSpriteTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874119E18DF42E500CE5E16 /* PerformanceSpriteTest.lua */; };
+		E874121518DF42E500CE5E16 /* PerformanceTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874119F18DF42E500CE5E16 /* PerformanceTest.lua */; };
+		E874121618DF42E500CE5E16 /* PerformanceTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E874119F18DF42E500CE5E16 /* PerformanceTest.lua */; };
+		E874121718DF42E500CE5E16 /* PhysicsTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411A118DF42E500CE5E16 /* PhysicsTest.lua */; };
+		E874121818DF42E500CE5E16 /* PhysicsTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411A118DF42E500CE5E16 /* PhysicsTest.lua */; };
+		E874121918DF42E500CE5E16 /* RenderTextureTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411A318DF42E500CE5E16 /* RenderTextureTest.lua */; };
+		E874121A18DF42E500CE5E16 /* RenderTextureTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411A318DF42E500CE5E16 /* RenderTextureTest.lua */; };
+		E874121B18DF42E500CE5E16 /* RotateWorldTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411A518DF42E500CE5E16 /* RotateWorldTest.lua */; };
+		E874121C18DF42E500CE5E16 /* RotateWorldTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411A518DF42E500CE5E16 /* RotateWorldTest.lua */; };
+		E874121D18DF42E500CE5E16 /* SceneTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411A718DF42E500CE5E16 /* SceneTest.lua */; };
+		E874121E18DF42E500CE5E16 /* SceneTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411A718DF42E500CE5E16 /* SceneTest.lua */; };
+		E874121F18DF42E500CE5E16 /* SpineTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411A918DF42E500CE5E16 /* SpineTest.lua */; };
+		E874122018DF42E500CE5E16 /* SpineTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411A918DF42E500CE5E16 /* SpineTest.lua */; };
+		E874122118DF42E500CE5E16 /* SpriteTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411AB18DF42E500CE5E16 /* SpriteTest.lua */; };
+		E874122218DF42E500CE5E16 /* SpriteTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411AB18DF42E500CE5E16 /* SpriteTest.lua */; };
+		E874122318DF42E500CE5E16 /* testResource.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411AC18DF42E500CE5E16 /* testResource.lua */; };
+		E874122418DF42E500CE5E16 /* testResource.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411AC18DF42E500CE5E16 /* testResource.lua */; };
+		E874122518DF42E500CE5E16 /* Texture2dTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411AE18DF42E500CE5E16 /* Texture2dTest.lua */; };
+		E874122618DF42E500CE5E16 /* Texture2dTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411AE18DF42E500CE5E16 /* Texture2dTest.lua */; };
+		E874122718DF42E500CE5E16 /* TileMapTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411B018DF42E500CE5E16 /* TileMapTest.lua */; };
+		E874122818DF42E500CE5E16 /* TileMapTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411B018DF42E500CE5E16 /* TileMapTest.lua */; };
+		E874122918DF42E500CE5E16 /* Ball.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411B218DF42E500CE5E16 /* Ball.lua */; };
+		E874122A18DF42E500CE5E16 /* Ball.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411B218DF42E500CE5E16 /* Ball.lua */; };
+		E874122B18DF42E500CE5E16 /* Paddle.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411B318DF42E500CE5E16 /* Paddle.lua */; };
+		E874122C18DF42E500CE5E16 /* Paddle.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411B318DF42E500CE5E16 /* Paddle.lua */; };
+		E874122D18DF42E500CE5E16 /* TouchesTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411B418DF42E500CE5E16 /* TouchesTest.lua */; };
+		E874122E18DF42E500CE5E16 /* TouchesTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411B418DF42E500CE5E16 /* TouchesTest.lua */; };
+		E874122F18DF42E500CE5E16 /* TransitionsName.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411B618DF42E500CE5E16 /* TransitionsName.lua */; };
+		E874123018DF42E500CE5E16 /* TransitionsName.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411B618DF42E500CE5E16 /* TransitionsName.lua */; };
+		E874123118DF42E500CE5E16 /* TransitionsTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411B718DF42E500CE5E16 /* TransitionsTest.lua */; };
+		E874123218DF42E500CE5E16 /* TransitionsTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411B718DF42E500CE5E16 /* TransitionsTest.lua */; };
+		E874123318DF42E500CE5E16 /* UserDefaultTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411B918DF42E500CE5E16 /* UserDefaultTest.lua */; };
+		E874123418DF42E500CE5E16 /* UserDefaultTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411B918DF42E500CE5E16 /* UserDefaultTest.lua */; };
+		E874123518DF42E500CE5E16 /* VisibleRect.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411BA18DF42E500CE5E16 /* VisibleRect.lua */; };
+		E874123618DF42E500CE5E16 /* VisibleRect.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411BA18DF42E500CE5E16 /* VisibleRect.lua */; };
+		E874123718DF42E500CE5E16 /* XMLHttpRequestTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411BC18DF42E500CE5E16 /* XMLHttpRequestTest.lua */; };
+		E874123818DF42E500CE5E16 /* XMLHttpRequestTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411BC18DF42E500CE5E16 /* XMLHttpRequestTest.lua */; };
+		E874123918DF42E500CE5E16 /* ZwoptexTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411BE18DF42E500CE5E16 /* ZwoptexTest.lua */; };
+		E874123A18DF42E500CE5E16 /* ZwoptexTest.lua in Resources */ = {isa = PBXBuildFile; fileRef = E87411BE18DF42E500CE5E16 /* ZwoptexTest.lua */; };
+		E874127A18DF444600CE5E16 /* animated-grossini.plist in Resources */ = {isa = PBXBuildFile; fileRef = E874123D18DF444600CE5E16 /* animated-grossini.plist */; };
+		E874127B18DF444600CE5E16 /* animated-grossini.plist in Resources */ = {isa = PBXBuildFile; fileRef = E874123D18DF444600CE5E16 /* animated-grossini.plist */; };
+		E874127C18DF444600CE5E16 /* animated-grossini.png in Resources */ = {isa = PBXBuildFile; fileRef = E874123E18DF444600CE5E16 /* animated-grossini.png */; };
+		E874127D18DF444600CE5E16 /* animated-grossini.png in Resources */ = {isa = PBXBuildFile; fileRef = E874123E18DF444600CE5E16 /* animated-grossini.png */; };
+		E874127E18DF444600CE5E16 /* btn-a-0.png in Resources */ = {isa = PBXBuildFile; fileRef = E874123F18DF444600CE5E16 /* btn-a-0.png */; };
+		E874127F18DF444600CE5E16 /* btn-a-0.png in Resources */ = {isa = PBXBuildFile; fileRef = E874123F18DF444600CE5E16 /* btn-a-0.png */; };
+		E874128018DF444600CE5E16 /* btn-a-1.png in Resources */ = {isa = PBXBuildFile; fileRef = E874124018DF444600CE5E16 /* btn-a-1.png */; };
+		E874128118DF444600CE5E16 /* btn-a-1.png in Resources */ = {isa = PBXBuildFile; fileRef = E874124018DF444600CE5E16 /* btn-a-1.png */; };
+		E874128218DF444600CE5E16 /* btn-a-2.png in Resources */ = {isa = PBXBuildFile; fileRef = E874124118DF444600CE5E16 /* btn-a-2.png */; };
+		E874128318DF444600CE5E16 /* btn-a-2.png in Resources */ = {isa = PBXBuildFile; fileRef = E874124118DF444600CE5E16 /* btn-a-2.png */; };
+		E874128418DF444600CE5E16 /* btn-b-0.png in Resources */ = {isa = PBXBuildFile; fileRef = E874124218DF444600CE5E16 /* btn-b-0.png */; };
+		E874128518DF444600CE5E16 /* btn-b-0.png in Resources */ = {isa = PBXBuildFile; fileRef = E874124218DF444600CE5E16 /* btn-b-0.png */; };
+		E874128618DF444600CE5E16 /* btn-b-1.png in Resources */ = {isa = PBXBuildFile; fileRef = E874124318DF444600CE5E16 /* btn-b-1.png */; };
+		E874128718DF444600CE5E16 /* btn-b-1.png in Resources */ = {isa = PBXBuildFile; fileRef = E874124318DF444600CE5E16 /* btn-b-1.png */; };
+		E874128818DF444600CE5E16 /* btn-b-2.png in Resources */ = {isa = PBXBuildFile; fileRef = E874124418DF444600CE5E16 /* btn-b-2.png */; };
+		E874128918DF444600CE5E16 /* btn-b-2.png in Resources */ = {isa = PBXBuildFile; fileRef = E874124418DF444600CE5E16 /* btn-b-2.png */; };
+		E874128A18DF444600CE5E16 /* btn-back-0.png in Resources */ = {isa = PBXBuildFile; fileRef = E874124518DF444600CE5E16 /* btn-back-0.png */; };
+		E874128B18DF444600CE5E16 /* btn-back-0.png in Resources */ = {isa = PBXBuildFile; fileRef = E874124518DF444600CE5E16 /* btn-back-0.png */; };
+		E874128C18DF444600CE5E16 /* btn-back-1.png in Resources */ = {isa = PBXBuildFile; fileRef = E874124618DF444600CE5E16 /* btn-back-1.png */; };
+		E874128D18DF444600CE5E16 /* btn-back-1.png in Resources */ = {isa = PBXBuildFile; fileRef = E874124618DF444600CE5E16 /* btn-back-1.png */; };
+		E874128E18DF444600CE5E16 /* btn-test-0.png in Resources */ = {isa = PBXBuildFile; fileRef = E874124718DF444600CE5E16 /* btn-test-0.png */; };
+		E874128F18DF444600CE5E16 /* btn-test-0.png in Resources */ = {isa = PBXBuildFile; fileRef = E874124718DF444600CE5E16 /* btn-test-0.png */; };
+		E874129018DF444600CE5E16 /* btn-test-1.png in Resources */ = {isa = PBXBuildFile; fileRef = E874124818DF444600CE5E16 /* btn-test-1.png */; };
+		E874129118DF444600CE5E16 /* btn-test-1.png in Resources */ = {isa = PBXBuildFile; fileRef = E874124818DF444600CE5E16 /* btn-test-1.png */; };
+		E874129218DF444600CE5E16 /* btn-test-2.png in Resources */ = {isa = PBXBuildFile; fileRef = E874124918DF444600CE5E16 /* btn-test-2.png */; };
+		E874129318DF444600CE5E16 /* btn-test-2.png in Resources */ = {isa = PBXBuildFile; fileRef = E874124918DF444600CE5E16 /* btn-test-2.png */; };
+		E874129418DF444600CE5E16 /* burst.png in Resources */ = {isa = PBXBuildFile; fileRef = E874124A18DF444600CE5E16 /* burst.png */; };
+		E874129518DF444600CE5E16 /* burst.png in Resources */ = {isa = PBXBuildFile; fileRef = E874124A18DF444600CE5E16 /* burst.png */; };
+		E874129618DF444600CE5E16 /* TestAnimations.ccb in Resources */ = {isa = PBXBuildFile; fileRef = E874124C18DF444600CE5E16 /* TestAnimations.ccb */; };
+		E874129718DF444600CE5E16 /* TestAnimations.ccb in Resources */ = {isa = PBXBuildFile; fileRef = E874124C18DF444600CE5E16 /* TestAnimations.ccb */; };
+		E874129818DF444600CE5E16 /* TestAnimations.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = E874124D18DF444600CE5E16 /* TestAnimations.ccbi */; };
+		E874129918DF444600CE5E16 /* TestAnimations.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = E874124D18DF444600CE5E16 /* TestAnimations.ccbi */; };
+		E874129A18DF444600CE5E16 /* TestAnimationsSub.ccb in Resources */ = {isa = PBXBuildFile; fileRef = E874124E18DF444600CE5E16 /* TestAnimationsSub.ccb */; };
+		E874129B18DF444600CE5E16 /* TestAnimationsSub.ccb in Resources */ = {isa = PBXBuildFile; fileRef = E874124E18DF444600CE5E16 /* TestAnimationsSub.ccb */; };
+		E874129C18DF444600CE5E16 /* TestAnimationsSub.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = E874124F18DF444600CE5E16 /* TestAnimationsSub.ccbi */; };
+		E874129D18DF444600CE5E16 /* TestAnimationsSub.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = E874124F18DF444600CE5E16 /* TestAnimationsSub.ccbi */; };
+		E874129E18DF444600CE5E16 /* TestButtons.ccb in Resources */ = {isa = PBXBuildFile; fileRef = E874125018DF444600CE5E16 /* TestButtons.ccb */; };
+		E874129F18DF444600CE5E16 /* TestButtons.ccb in Resources */ = {isa = PBXBuildFile; fileRef = E874125018DF444600CE5E16 /* TestButtons.ccb */; };
+		E87412A018DF444600CE5E16 /* TestButtons.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = E874125118DF444600CE5E16 /* TestButtons.ccbi */; };
+		E87412A118DF444600CE5E16 /* TestButtons.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = E874125118DF444600CE5E16 /* TestButtons.ccbi */; };
+		E87412A218DF444600CE5E16 /* TestHeader.ccb in Resources */ = {isa = PBXBuildFile; fileRef = E874125218DF444600CE5E16 /* TestHeader.ccb */; };
+		E87412A318DF444600CE5E16 /* TestHeader.ccb in Resources */ = {isa = PBXBuildFile; fileRef = E874125218DF444600CE5E16 /* TestHeader.ccb */; };
+		E87412A418DF444600CE5E16 /* TestHeader.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = E874125318DF444600CE5E16 /* TestHeader.ccbi */; };
+		E87412A518DF444600CE5E16 /* TestHeader.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = E874125318DF444600CE5E16 /* TestHeader.ccbi */; };
+		E87412A618DF444600CE5E16 /* TestLabels.ccb in Resources */ = {isa = PBXBuildFile; fileRef = E874125418DF444600CE5E16 /* TestLabels.ccb */; };
+		E87412A718DF444600CE5E16 /* TestLabels.ccb in Resources */ = {isa = PBXBuildFile; fileRef = E874125418DF444600CE5E16 /* TestLabels.ccb */; };
+		E87412A818DF444600CE5E16 /* TestLabels.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = E874125518DF444600CE5E16 /* TestLabels.ccbi */; };
+		E87412A918DF444600CE5E16 /* TestLabels.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = E874125518DF444600CE5E16 /* TestLabels.ccbi */; };
+		E87412AA18DF444600CE5E16 /* TestMenus.ccb in Resources */ = {isa = PBXBuildFile; fileRef = E874125618DF444600CE5E16 /* TestMenus.ccb */; };
+		E87412AB18DF444600CE5E16 /* TestMenus.ccb in Resources */ = {isa = PBXBuildFile; fileRef = E874125618DF444600CE5E16 /* TestMenus.ccb */; };
+		E87412AC18DF444600CE5E16 /* TestMenus.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = E874125718DF444600CE5E16 /* TestMenus.ccbi */; };
+		E87412AD18DF444600CE5E16 /* TestMenus.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = E874125718DF444600CE5E16 /* TestMenus.ccbi */; };
+		E87412AE18DF444600CE5E16 /* TestParticleSystems.ccb in Resources */ = {isa = PBXBuildFile; fileRef = E874125818DF444600CE5E16 /* TestParticleSystems.ccb */; };
+		E87412AF18DF444600CE5E16 /* TestParticleSystems.ccb in Resources */ = {isa = PBXBuildFile; fileRef = E874125818DF444600CE5E16 /* TestParticleSystems.ccb */; };
+		E87412B018DF444600CE5E16 /* TestParticleSystems.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = E874125918DF444600CE5E16 /* TestParticleSystems.ccbi */; };
+		E87412B118DF444600CE5E16 /* TestParticleSystems.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = E874125918DF444600CE5E16 /* TestParticleSystems.ccbi */; };
+		E87412B218DF444600CE5E16 /* TestScrollViews.ccb in Resources */ = {isa = PBXBuildFile; fileRef = E874125A18DF444600CE5E16 /* TestScrollViews.ccb */; };
+		E87412B318DF444600CE5E16 /* TestScrollViews.ccb in Resources */ = {isa = PBXBuildFile; fileRef = E874125A18DF444600CE5E16 /* TestScrollViews.ccb */; };
+		E87412B418DF444600CE5E16 /* TestScrollViews.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = E874125B18DF444600CE5E16 /* TestScrollViews.ccbi */; };
+		E87412B518DF444600CE5E16 /* TestScrollViews.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = E874125B18DF444600CE5E16 /* TestScrollViews.ccbi */; };
+		E87412B618DF444600CE5E16 /* TestScrollViewsContentA.ccb in Resources */ = {isa = PBXBuildFile; fileRef = E874125C18DF444600CE5E16 /* TestScrollViewsContentA.ccb */; };
+		E87412B718DF444600CE5E16 /* TestScrollViewsContentA.ccb in Resources */ = {isa = PBXBuildFile; fileRef = E874125C18DF444600CE5E16 /* TestScrollViewsContentA.ccb */; };
+		E87412B818DF444600CE5E16 /* TestScrollViewsContentA.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = E874125D18DF444600CE5E16 /* TestScrollViewsContentA.ccbi */; };
+		E87412B918DF444600CE5E16 /* TestScrollViewsContentA.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = E874125D18DF444600CE5E16 /* TestScrollViewsContentA.ccbi */; };
+		E87412BA18DF444600CE5E16 /* TestSprites.ccb in Resources */ = {isa = PBXBuildFile; fileRef = E874125E18DF444600CE5E16 /* TestSprites.ccb */; };
+		E87412BB18DF444600CE5E16 /* TestSprites.ccb in Resources */ = {isa = PBXBuildFile; fileRef = E874125E18DF444600CE5E16 /* TestSprites.ccb */; };
+		E87412BC18DF444600CE5E16 /* TestSprites.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = E874125F18DF444600CE5E16 /* TestSprites.ccbi */; };
+		E87412BD18DF444600CE5E16 /* TestSprites.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = E874125F18DF444600CE5E16 /* TestSprites.ccbi */; };
+		E87412BE18DF444600CE5E16 /* TestTimelineCallback.ccb in Resources */ = {isa = PBXBuildFile; fileRef = E874126018DF444600CE5E16 /* TestTimelineCallback.ccb */; };
+		E87412BF18DF444600CE5E16 /* TestTimelineCallback.ccb in Resources */ = {isa = PBXBuildFile; fileRef = E874126018DF444600CE5E16 /* TestTimelineCallback.ccb */; };
+		E87412C018DF444600CE5E16 /* TestTimelineCallback.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = E874126118DF444600CE5E16 /* TestTimelineCallback.ccbi */; };
+		E87412C118DF444600CE5E16 /* TestTimelineCallback.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = E874126118DF444600CE5E16 /* TestTimelineCallback.ccbi */; };
+		E87412C218DF444600CE5E16 /* ccbParticleStars.png in Resources */ = {isa = PBXBuildFile; fileRef = E874126218DF444600CE5E16 /* ccbParticleStars.png */; };
+		E87412C318DF444600CE5E16 /* ccbParticleStars.png in Resources */ = {isa = PBXBuildFile; fileRef = E874126218DF444600CE5E16 /* ccbParticleStars.png */; };
+		E87412C418DF444600CE5E16 /* comic andy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E874126318DF444600CE5E16 /* comic andy.ttf */; };
+		E87412C518DF444600CE5E16 /* comic andy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E874126318DF444600CE5E16 /* comic andy.ttf */; };
+		E87412C618DF444600CE5E16 /* fileLookup.plist in Resources */ = {isa = PBXBuildFile; fileRef = E874126418DF444600CE5E16 /* fileLookup.plist */; };
+		E87412C718DF444600CE5E16 /* fileLookup.plist in Resources */ = {isa = PBXBuildFile; fileRef = E874126418DF444600CE5E16 /* fileLookup.plist */; };
+		E87412C818DF444600CE5E16 /* flower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E874126518DF444600CE5E16 /* flower.jpg */; };
+		E87412C918DF444600CE5E16 /* flower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E874126518DF444600CE5E16 /* flower.jpg */; };
+		E87412CA18DF444600CE5E16 /* gem-0.wav in Resources */ = {isa = PBXBuildFile; fileRef = E874126618DF444600CE5E16 /* gem-0.wav */; };
+		E87412CB18DF444600CE5E16 /* gem-0.wav in Resources */ = {isa = PBXBuildFile; fileRef = E874126618DF444600CE5E16 /* gem-0.wav */; };
+		E87412CC18DF444600CE5E16 /* gem-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = E874126718DF444600CE5E16 /* gem-1.wav */; };
+		E87412CD18DF444600CE5E16 /* gem-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = E874126718DF444600CE5E16 /* gem-1.wav */; };
+		E87412CE18DF444600CE5E16 /* grossini-generic.plist in Resources */ = {isa = PBXBuildFile; fileRef = E874126818DF444600CE5E16 /* grossini-generic.plist */; };
+		E87412CF18DF444600CE5E16 /* grossini-generic.plist in Resources */ = {isa = PBXBuildFile; fileRef = E874126818DF444600CE5E16 /* grossini-generic.plist */; };
+		E87412D018DF444700CE5E16 /* grossini-generic.png in Resources */ = {isa = PBXBuildFile; fileRef = E874126918DF444600CE5E16 /* grossini-generic.png */; };
+		E87412D118DF444700CE5E16 /* grossini-generic.png in Resources */ = {isa = PBXBuildFile; fileRef = E874126918DF444600CE5E16 /* grossini-generic.png */; };
+		E87412D218DF444700CE5E16 /* HelloCocosBuilder.ccb in Resources */ = {isa = PBXBuildFile; fileRef = E874126A18DF444600CE5E16 /* HelloCocosBuilder.ccb */; };
+		E87412D318DF444700CE5E16 /* HelloCocosBuilder.ccb in Resources */ = {isa = PBXBuildFile; fileRef = E874126A18DF444600CE5E16 /* HelloCocosBuilder.ccb */; };
+		E87412D418DF444700CE5E16 /* HelloCocosBuilder.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = E874126B18DF444600CE5E16 /* HelloCocosBuilder.ccbi */; };
+		E87412D518DF444700CE5E16 /* HelloCocosBuilder.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = E874126B18DF444600CE5E16 /* HelloCocosBuilder.ccbi */; };
+		E87412D618DF444700CE5E16 /* jungle-left.png in Resources */ = {isa = PBXBuildFile; fileRef = E874126C18DF444600CE5E16 /* jungle-left.png */; };
+		E87412D718DF444700CE5E16 /* jungle-left.png in Resources */ = {isa = PBXBuildFile; fileRef = E874126C18DF444600CE5E16 /* jungle-left.png */; };
+		E87412D818DF444700CE5E16 /* jungle-right.png in Resources */ = {isa = PBXBuildFile; fileRef = E874126D18DF444600CE5E16 /* jungle-right.png */; };
+		E87412D918DF444700CE5E16 /* jungle-right.png in Resources */ = {isa = PBXBuildFile; fileRef = E874126D18DF444600CE5E16 /* jungle-right.png */; };
+		E87412DA18DF444700CE5E16 /* jungle.png in Resources */ = {isa = PBXBuildFile; fileRef = E874126E18DF444600CE5E16 /* jungle.png */; };
+		E87412DB18DF444700CE5E16 /* jungle.png in Resources */ = {isa = PBXBuildFile; fileRef = E874126E18DF444600CE5E16 /* jungle.png */; };
+		E87412DC18DF444700CE5E16 /* logo-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E874126F18DF444600CE5E16 /* logo-icon.png */; };
+		E87412DD18DF444700CE5E16 /* logo-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E874126F18DF444600CE5E16 /* logo-icon.png */; };
+		E87412DE18DF444700CE5E16 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E874127018DF444600CE5E16 /* logo.png */; };
+		E87412DF18DF444700CE5E16 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E874127018DF444600CE5E16 /* logo.png */; };
+		E87412E018DF444700CE5E16 /* markerfelt24shadow.fnt in Resources */ = {isa = PBXBuildFile; fileRef = E874127118DF444600CE5E16 /* markerfelt24shadow.fnt */; };
+		E87412E118DF444700CE5E16 /* markerfelt24shadow.fnt in Resources */ = {isa = PBXBuildFile; fileRef = E874127118DF444600CE5E16 /* markerfelt24shadow.fnt */; };
+		E87412E218DF444700CE5E16 /* markerfelt24shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = E874127218DF444600CE5E16 /* markerfelt24shadow.png */; };
+		E87412E318DF444700CE5E16 /* markerfelt24shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = E874127218DF444600CE5E16 /* markerfelt24shadow.png */; };
+		E87412E418DF444700CE5E16 /* particle-fire.png in Resources */ = {isa = PBXBuildFile; fileRef = E874127318DF444600CE5E16 /* particle-fire.png */; };
+		E87412E518DF444700CE5E16 /* particle-fire.png in Resources */ = {isa = PBXBuildFile; fileRef = E874127318DF444600CE5E16 /* particle-fire.png */; };
+		E87412E618DF444700CE5E16 /* particle-smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = E874127418DF444600CE5E16 /* particle-smoke.png */; };
+		E87412E718DF444700CE5E16 /* particle-smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = E874127418DF444600CE5E16 /* particle-smoke.png */; };
+		E87412E818DF444700CE5E16 /* particle-snow.png in Resources */ = {isa = PBXBuildFile; fileRef = E874127518DF444600CE5E16 /* particle-snow.png */; };
+		E87412E918DF444700CE5E16 /* particle-snow.png in Resources */ = {isa = PBXBuildFile; fileRef = E874127518DF444600CE5E16 /* particle-snow.png */; };
+		E87412EA18DF444700CE5E16 /* particle-stars.png in Resources */ = {isa = PBXBuildFile; fileRef = E874127618DF444600CE5E16 /* particle-stars.png */; };
+		E87412EB18DF444700CE5E16 /* particle-stars.png in Resources */ = {isa = PBXBuildFile; fileRef = E874127618DF444600CE5E16 /* particle-stars.png */; };
+		E87412EC18DF444700CE5E16 /* scale-9-demo.png in Resources */ = {isa = PBXBuildFile; fileRef = E874127718DF444600CE5E16 /* scale-9-demo.png */; };
+		E87412ED18DF444700CE5E16 /* scale-9-demo.png in Resources */ = {isa = PBXBuildFile; fileRef = E874127718DF444600CE5E16 /* scale-9-demo.png */; };
+		E87412EE18DF444700CE5E16 /* CocosBuilderExample.ccbproj in Resources */ = {isa = PBXBuildFile; fileRef = E874127818DF444600CE5E16 /* CocosBuilderExample.ccbproj */; };
+		E87412EF18DF444700CE5E16 /* CocosBuilderExample.ccbproj in Resources */ = {isa = PBXBuildFile; fileRef = E874127818DF444600CE5E16 /* CocosBuilderExample.ccbproj */; };
+		E87412F018DF444700CE5E16 /* fileLookup.plist in Resources */ = {isa = PBXBuildFile; fileRef = E874127918DF444600CE5E16 /* fileLookup.plist */; };
+		E87412F118DF444700CE5E16 /* fileLookup.plist in Resources */ = {isa = PBXBuildFile; fileRef = E874127918DF444600CE5E16 /* fileLookup.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AC6FAF8180E9839004C840B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1551A33F158F2AB200E66CFE;
+			remoteInfo = "cocos2dx Mac";
+		};
+		1AC6FAFA180E9839004C840B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A03F2FD617814595006731B9;
+			remoteInfo = "cocos2dx-extensions Mac";
+		};
+		1AC6FAFC180E9839004C840B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A03F2CB81780BD04006731B9;
+			remoteInfo = "chipmunk Mac";
+		};
+		1AC6FAFE180E9839004C840B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A03F2D9B1780BDF7006731B9;
+			remoteInfo = "box2d Mac";
+		};
+		1AC6FB00180E9839004C840B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A03F2ED617814268006731B9;
+			remoteInfo = "CocosDenshion Mac";
+		};
+		1AC6FB02180E9839004C840B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A03F31FD1781479B006731B9;
+			remoteInfo = "jsbindings Mac";
+		};
+		1AC6FB04180E9839004C840B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1A6FB53017854BC300CDF010;
+			remoteInfo = "luabindings Mac";
+		};
+		1AC6FB06180E9839004C840B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A07A4D641783777C0073F6A7;
+			remoteInfo = "cocos2dx iOS";
+		};
+		1AC6FB08180E9839004C840B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A07A4EFC1783867C0073F6A7;
+			remoteInfo = "cocos2dx-extensions iOS";
+		};
+		1AC6FB0A180E9839004C840B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A07A4F3B178387670073F6A7;
+			remoteInfo = "chipmunk iOS";
+		};
+		1AC6FB0C180E9839004C840B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A07A4F9E1783876B0073F6A7;
+			remoteInfo = "box2d iOS";
+		};
+		1AC6FB0E180E9839004C840B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A07A4FB4178387730073F6A7;
+			remoteInfo = "CocosDenshion iOS";
+		};
+		1AC6FB10180E9839004C840B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A07A5030178387750073F6A7;
+			remoteInfo = "jsbindings iOS";
+		};
+		1AC6FB12180E9839004C840B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1A119791178526AA00D62A44;
+			remoteInfo = "luabindings iOS";
+		};
+		1AC6FB15180E9959004C840B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1551A33E158F2AB200E66CFE;
+			remoteInfo = "cocos2dx Mac";
+		};
+		1AC6FB17180E9959004C840B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A03F2FC117814595006731B9;
+			remoteInfo = "cocos2dx-extensions Mac";
+		};
+		1AC6FB19180E9959004C840B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A03F2B781780BD04006731B9;
+			remoteInfo = "chipmunk Mac";
+		};
+		1AC6FB1B180E9959004C840B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A03F2E9817814268006731B9;
+			remoteInfo = "CocosDenshion Mac";
+		};
+		1AC6FB1D180E9963004C840B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A03F2D5D1780BDF7006731B9;
+			remoteInfo = "box2d Mac";
+		};
+		1AC6FB24180E99E1004C840B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A07A4C241783777C0073F6A7;
+			remoteInfo = "cocos2dx iOS";
+		};
+		1AC6FB26180E99E1004C840B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A07A4E111783867C0073F6A7;
+			remoteInfo = "cocos2dx-extensions iOS";
+		};
+		1AC6FB28180E99E1004C840B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A07A4EFD178387670073F6A7;
+			remoteInfo = "chipmunk iOS";
+		};
+		1AC6FB2A180E99E1004C840B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A07A4F3C1783876B0073F6A7;
+			remoteInfo = "box2d iOS";
+		};
+		1AC6FB2C180E99E1004C840B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A07A4F9F178387730073F6A7;
+			remoteInfo = "CocosDenshion iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = ../cocos2d/build/cocos2d_libs.xcodeproj; sourceTree = "<group>"; };
+		1ACB3243164770DE00914215 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
+		1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = ../Classes/AppDelegate.cpp; sourceTree = "<group>"; };
+		1AFAF8B416D35DE700DB1158 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../Classes/AppDelegate.h; sourceTree = "<group>"; };
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D6058910D05DD3D006BFB54 /* TestLua iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TestLua iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		503AE0F617EB97AB00D1A890 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
+		503AE0F717EB97AB00D1A890 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		503AE0FA17EB989F00D1A890 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = ios/AppController.h; sourceTree = SOURCE_ROOT; };
+		503AE0FB17EB989F00D1A890 /* AppController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppController.mm; path = ios/AppController.mm; sourceTree = SOURCE_ROOT; };
+		503AE0FC17EB989F00D1A890 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ios/main.m; sourceTree = SOURCE_ROOT; };
+		503AE0FE17EB989F00D1A890 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = ios/RootViewController.h; sourceTree = SOURCE_ROOT; };
+		503AE0FF17EB989F00D1A890 /* RootViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = RootViewController.mm; path = ios/RootViewController.mm; sourceTree = SOURCE_ROOT; };
+		503AE10317EB98FF00D1A890 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = mac/main.cpp; sourceTree = "<group>"; };
+		503AE11117EB99EE00D1A890 /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurl.dylib; path = usr/lib/libcurl.dylib; sourceTree = SDKROOT; };
+		503AE11A17EB9C5A00D1A890 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		5087E76F17EB910900C73F5D /* TestLua Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TestLua Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5087E77217EB970100C73F5D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5087E77317EB970100C73F5D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		5087E77417EB970100C73F5D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		5087E77517EB970100C73F5D /* Icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-114.png"; sourceTree = "<group>"; };
+		5087E77617EB970100C73F5D /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
+		5087E77717EB970100C73F5D /* Icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-144.png"; sourceTree = "<group>"; };
+		5087E77817EB970100C73F5D /* Icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-152.png"; sourceTree = "<group>"; };
+		5087E77917EB970100C73F5D /* Icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-57.png"; sourceTree = "<group>"; };
+		5087E77A17EB970100C73F5D /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		5087E77B17EB970100C73F5D /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		5087E77C17EB970100C73F5D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5087E78817EB974C00C73F5D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		5087E78A17EB975400C73F5D /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		50EF629217ECD46A001EB2F8 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
+		50EF629317ECD46A001EB2F8 /* Icon-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-58.png"; sourceTree = "<group>"; };
+		50EF629417ECD46A001EB2F8 /* Icon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-80.png"; sourceTree = "<group>"; };
+		50EF629517ECD46A001EB2F8 /* Icon-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-100.png"; sourceTree = "<group>"; };
+		50EF62A017ECD613001EB2F8 /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
+		50EF62A117ECD613001EB2F8 /* Icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-50.png"; sourceTree = "<group>"; };
+		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D44C620B132DFF330009C878 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		D44C620D132DFF430009C878 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D44C620F132DFF4E0009C878 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D6B0611A1803AB670077942B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		E874114118DF3E4800CE5E16 /* lua_assetsmanager_test_sample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lua_assetsmanager_test_sample.cpp; path = ../Classes/lua_assetsmanager_test_sample.cpp; sourceTree = "<group>"; };
+		E874114218DF3E4800CE5E16 /* lua_assetsmanager_test_sample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lua_assetsmanager_test_sample.h; path = ../Classes/lua_assetsmanager_test_sample.h; sourceTree = "<group>"; };
+		E874114B18DF408B00CE5E16 /* LuaObjectCBridgeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LuaObjectCBridgeTest.h; path = ios/LuaObjectCBridgeTest.h; sourceTree = SOURCE_ROOT; };
+		E874114C18DF408B00CE5E16 /* LuaObjectCBridgeTest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LuaObjectCBridgeTest.mm; path = ios/LuaObjectCBridgeTest.mm; sourceTree = SOURCE_ROOT; };
+		E874114F18DF409500CE5E16 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = ios/Prefix.pch; sourceTree = SOURCE_ROOT; };
+		E874115318DF42E500CE5E16 /* AccelerometerTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AccelerometerTest.lua; sourceTree = "<group>"; };
+		E874115518DF42E500CE5E16 /* ActionManagerTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ActionManagerTest.lua; sourceTree = "<group>"; };
+		E874115718DF42E500CE5E16 /* ActionsEaseTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ActionsEaseTest.lua; sourceTree = "<group>"; };
+		E874115918DF42E500CE5E16 /* ActionsProgressTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ActionsProgressTest.lua; sourceTree = "<group>"; };
+		E874115B18DF42E500CE5E16 /* ActionsTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ActionsTest.lua; sourceTree = "<group>"; };
+		E874115D18DF42E500CE5E16 /* AssetsManagerModule.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AssetsManagerModule.lua; sourceTree = "<group>"; };
+		E874115E18DF42E500CE5E16 /* AssetsManagerTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AssetsManagerTest.lua; sourceTree = "<group>"; };
+		E874116018DF42E500CE5E16 /* BugsTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BugsTest.lua; sourceTree = "<group>"; };
+		E874116218DF42E500CE5E16 /* ClickAndMoveTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ClickAndMoveTest.lua; sourceTree = "<group>"; };
+		E874116418DF42E500CE5E16 /* CocosDenshionTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CocosDenshionTest.lua; sourceTree = "<group>"; };
+		E874116718DF42E500CE5E16 /* CocoStudioArmatureTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CocoStudioArmatureTest.lua; sourceTree = "<group>"; };
+		E874116918DF42E500CE5E16 /* CocoStudioGUITest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CocoStudioGUITest.lua; sourceTree = "<group>"; };
+		E874116B18DF42E500CE5E16 /* CocoStudioSceneTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CocoStudioSceneTest.lua; sourceTree = "<group>"; };
+		E874116D18DF42E500CE5E16 /* acts.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = acts.lua; sourceTree = "<group>"; };
+		E874116E18DF42E500CE5E16 /* cons.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cons.lua; sourceTree = "<group>"; };
+		E874116F18DF42E500CE5E16 /* eventDef.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eventDef.lua; sourceTree = "<group>"; };
+		E874117018DF42E500CE5E16 /* CocoStudioTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CocoStudioTest.lua; sourceTree = "<group>"; };
+		E874117118DF42E500CE5E16 /* controller.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = controller.lua; sourceTree = "<group>"; };
+		E874117318DF42E500CE5E16 /* CurrentLanguageTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CurrentLanguageTest.lua; sourceTree = "<group>"; };
+		E874117518DF42E500CE5E16 /* DrawPrimitivesTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DrawPrimitivesTest.lua; sourceTree = "<group>"; };
+		E874117718DF42E500CE5E16 /* EffectsAdvancedTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EffectsAdvancedTest.lua; sourceTree = "<group>"; };
+		E874117918DF42E500CE5E16 /* EffectsName.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EffectsName.lua; sourceTree = "<group>"; };
+		E874117A18DF42E500CE5E16 /* EffectsTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EffectsTest.lua; sourceTree = "<group>"; };
+		E874117C18DF42E500CE5E16 /* CocosBuilderTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CocosBuilderTest.lua; sourceTree = "<group>"; };
+		E874117D18DF42E500CE5E16 /* ExtensionTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ExtensionTest.lua; sourceTree = "<group>"; };
+		E874117E18DF42E500CE5E16 /* WebProxyTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WebProxyTest.lua; sourceTree = "<group>"; };
+		E874118018DF42E500CE5E16 /* FontTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FontTest.lua; sourceTree = "<group>"; };
+		E874118118DF42E500CE5E16 /* helper.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = helper.lua; sourceTree = "<group>"; };
+		E874118318DF42E500CE5E16 /* IntervalTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IntervalTest.lua; sourceTree = "<group>"; };
+		E874118518DF42E500CE5E16 /* KeypadTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KeypadTest.lua; sourceTree = "<group>"; };
+		E874118718DF42E500CE5E16 /* LabelTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LabelTest.lua; sourceTree = "<group>"; };
+		E874118918DF42E500CE5E16 /* LabelTestNew.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LabelTestNew.lua; sourceTree = "<group>"; };
+		E874118B18DF42E500CE5E16 /* LayerTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LayerTest.lua; sourceTree = "<group>"; };
+		E874118D18DF42E500CE5E16 /* LuaBridgeTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LuaBridgeTest.lua; sourceTree = "<group>"; };
+		E874118E18DF42E500CE5E16 /* mainMenu.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mainMenu.lua; sourceTree = "<group>"; };
+		E874119018DF42E500CE5E16 /* MenuTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MenuTest.lua; sourceTree = "<group>"; };
+		E874119218DF42E500CE5E16 /* MotionStreakTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MotionStreakTest.lua; sourceTree = "<group>"; };
+		E874119418DF42E500CE5E16 /* NewEventDispatcherTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NewEventDispatcherTest.lua; sourceTree = "<group>"; };
+		E874119618DF42E500CE5E16 /* NodeTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NodeTest.lua; sourceTree = "<group>"; };
+		E874119818DF42E500CE5E16 /* OpenGLTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenGLTest.lua; sourceTree = "<group>"; };
+		E874119A18DF42E500CE5E16 /* ParallaxTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ParallaxTest.lua; sourceTree = "<group>"; };
+		E874119C18DF42E500CE5E16 /* ParticleTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ParticleTest.lua; sourceTree = "<group>"; };
+		E874119E18DF42E500CE5E16 /* PerformanceSpriteTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PerformanceSpriteTest.lua; sourceTree = "<group>"; };
+		E874119F18DF42E500CE5E16 /* PerformanceTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PerformanceTest.lua; sourceTree = "<group>"; };
+		E87411A118DF42E500CE5E16 /* PhysicsTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PhysicsTest.lua; sourceTree = "<group>"; };
+		E87411A318DF42E500CE5E16 /* RenderTextureTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RenderTextureTest.lua; sourceTree = "<group>"; };
+		E87411A518DF42E500CE5E16 /* RotateWorldTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RotateWorldTest.lua; sourceTree = "<group>"; };
+		E87411A718DF42E500CE5E16 /* SceneTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SceneTest.lua; sourceTree = "<group>"; };
+		E87411A918DF42E500CE5E16 /* SpineTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SpineTest.lua; sourceTree = "<group>"; };
+		E87411AB18DF42E500CE5E16 /* SpriteTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SpriteTest.lua; sourceTree = "<group>"; };
+		E87411AC18DF42E500CE5E16 /* testResource.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testResource.lua; sourceTree = "<group>"; };
+		E87411AE18DF42E500CE5E16 /* Texture2dTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Texture2dTest.lua; sourceTree = "<group>"; };
+		E87411B018DF42E500CE5E16 /* TileMapTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TileMapTest.lua; sourceTree = "<group>"; };
+		E87411B218DF42E500CE5E16 /* Ball.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ball.lua; sourceTree = "<group>"; };
+		E87411B318DF42E500CE5E16 /* Paddle.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Paddle.lua; sourceTree = "<group>"; };
+		E87411B418DF42E500CE5E16 /* TouchesTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TouchesTest.lua; sourceTree = "<group>"; };
+		E87411B618DF42E500CE5E16 /* TransitionsName.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TransitionsName.lua; sourceTree = "<group>"; };
+		E87411B718DF42E500CE5E16 /* TransitionsTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TransitionsTest.lua; sourceTree = "<group>"; };
+		E87411B918DF42E500CE5E16 /* UserDefaultTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UserDefaultTest.lua; sourceTree = "<group>"; };
+		E87411BA18DF42E500CE5E16 /* VisibleRect.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VisibleRect.lua; sourceTree = "<group>"; };
+		E87411BC18DF42E500CE5E16 /* XMLHttpRequestTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XMLHttpRequestTest.lua; sourceTree = "<group>"; };
+		E87411BE18DF42E500CE5E16 /* ZwoptexTest.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ZwoptexTest.lua; sourceTree = "<group>"; };
+		E874123D18DF444600CE5E16 /* animated-grossini.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "animated-grossini.plist"; sourceTree = "<group>"; };
+		E874123E18DF444600CE5E16 /* animated-grossini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animated-grossini.png"; sourceTree = "<group>"; };
+		E874123F18DF444600CE5E16 /* btn-a-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-a-0.png"; sourceTree = "<group>"; };
+		E874124018DF444600CE5E16 /* btn-a-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-a-1.png"; sourceTree = "<group>"; };
+		E874124118DF444600CE5E16 /* btn-a-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-a-2.png"; sourceTree = "<group>"; };
+		E874124218DF444600CE5E16 /* btn-b-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-b-0.png"; sourceTree = "<group>"; };
+		E874124318DF444600CE5E16 /* btn-b-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-b-1.png"; sourceTree = "<group>"; };
+		E874124418DF444600CE5E16 /* btn-b-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-b-2.png"; sourceTree = "<group>"; };
+		E874124518DF444600CE5E16 /* btn-back-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-back-0.png"; sourceTree = "<group>"; };
+		E874124618DF444600CE5E16 /* btn-back-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-back-1.png"; sourceTree = "<group>"; };
+		E874124718DF444600CE5E16 /* btn-test-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-test-0.png"; sourceTree = "<group>"; };
+		E874124818DF444600CE5E16 /* btn-test-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-test-1.png"; sourceTree = "<group>"; };
+		E874124918DF444600CE5E16 /* btn-test-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-test-2.png"; sourceTree = "<group>"; };
+		E874124A18DF444600CE5E16 /* burst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burst.png; sourceTree = "<group>"; };
+		E874124C18DF444600CE5E16 /* TestAnimations.ccb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TestAnimations.ccb; sourceTree = "<group>"; };
+		E874124D18DF444600CE5E16 /* TestAnimations.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestAnimations.ccbi; sourceTree = "<group>"; };
+		E874124E18DF444600CE5E16 /* TestAnimationsSub.ccb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TestAnimationsSub.ccb; sourceTree = "<group>"; };
+		E874124F18DF444600CE5E16 /* TestAnimationsSub.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestAnimationsSub.ccbi; sourceTree = "<group>"; };
+		E874125018DF444600CE5E16 /* TestButtons.ccb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TestButtons.ccb; sourceTree = "<group>"; };
+		E874125118DF444600CE5E16 /* TestButtons.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestButtons.ccbi; sourceTree = "<group>"; };
+		E874125218DF444600CE5E16 /* TestHeader.ccb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TestHeader.ccb; sourceTree = "<group>"; };
+		E874125318DF444600CE5E16 /* TestHeader.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestHeader.ccbi; sourceTree = "<group>"; };
+		E874125418DF444600CE5E16 /* TestLabels.ccb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TestLabels.ccb; sourceTree = "<group>"; };
+		E874125518DF444600CE5E16 /* TestLabels.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestLabels.ccbi; sourceTree = "<group>"; };
+		E874125618DF444600CE5E16 /* TestMenus.ccb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TestMenus.ccb; sourceTree = "<group>"; };
+		E874125718DF444600CE5E16 /* TestMenus.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestMenus.ccbi; sourceTree = "<group>"; };
+		E874125818DF444600CE5E16 /* TestParticleSystems.ccb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TestParticleSystems.ccb; sourceTree = "<group>"; };
+		E874125918DF444600CE5E16 /* TestParticleSystems.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestParticleSystems.ccbi; sourceTree = "<group>"; };
+		E874125A18DF444600CE5E16 /* TestScrollViews.ccb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TestScrollViews.ccb; sourceTree = "<group>"; };
+		E874125B18DF444600CE5E16 /* TestScrollViews.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestScrollViews.ccbi; sourceTree = "<group>"; };
+		E874125C18DF444600CE5E16 /* TestScrollViewsContentA.ccb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TestScrollViewsContentA.ccb; sourceTree = "<group>"; };
+		E874125D18DF444600CE5E16 /* TestScrollViewsContentA.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestScrollViewsContentA.ccbi; sourceTree = "<group>"; };
+		E874125E18DF444600CE5E16 /* TestSprites.ccb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TestSprites.ccb; sourceTree = "<group>"; };
+		E874125F18DF444600CE5E16 /* TestSprites.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestSprites.ccbi; sourceTree = "<group>"; };
+		E874126018DF444600CE5E16 /* TestTimelineCallback.ccb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TestTimelineCallback.ccb; sourceTree = "<group>"; };
+		E874126118DF444600CE5E16 /* TestTimelineCallback.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestTimelineCallback.ccbi; sourceTree = "<group>"; };
+		E874126218DF444600CE5E16 /* ccbParticleStars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ccbParticleStars.png; sourceTree = "<group>"; };
+		E874126318DF444600CE5E16 /* comic andy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "comic andy.ttf"; sourceTree = "<group>"; };
+		E874126418DF444600CE5E16 /* fileLookup.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = fileLookup.plist; sourceTree = "<group>"; };
+		E874126518DF444600CE5E16 /* flower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flower.jpg; sourceTree = "<group>"; };
+		E874126618DF444600CE5E16 /* gem-0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "gem-0.wav"; sourceTree = "<group>"; };
+		E874126718DF444600CE5E16 /* gem-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "gem-1.wav"; sourceTree = "<group>"; };
+		E874126818DF444600CE5E16 /* grossini-generic.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "grossini-generic.plist"; sourceTree = "<group>"; };
+		E874126918DF444600CE5E16 /* grossini-generic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grossini-generic.png"; sourceTree = "<group>"; };
+		E874126A18DF444600CE5E16 /* HelloCocosBuilder.ccb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = HelloCocosBuilder.ccb; sourceTree = "<group>"; };
+		E874126B18DF444600CE5E16 /* HelloCocosBuilder.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; path = HelloCocosBuilder.ccbi; sourceTree = "<group>"; };
+		E874126C18DF444600CE5E16 /* jungle-left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jungle-left.png"; sourceTree = "<group>"; };
+		E874126D18DF444600CE5E16 /* jungle-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jungle-right.png"; sourceTree = "<group>"; };
+		E874126E18DF444600CE5E16 /* jungle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jungle.png; sourceTree = "<group>"; };
+		E874126F18DF444600CE5E16 /* logo-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-icon.png"; sourceTree = "<group>"; };
+		E874127018DF444600CE5E16 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		E874127118DF444600CE5E16 /* markerfelt24shadow.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = markerfelt24shadow.fnt; sourceTree = "<group>"; };
+		E874127218DF444600CE5E16 /* markerfelt24shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = markerfelt24shadow.png; sourceTree = "<group>"; };
+		E874127318DF444600CE5E16 /* particle-fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "particle-fire.png"; sourceTree = "<group>"; };
+		E874127418DF444600CE5E16 /* particle-smoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "particle-smoke.png"; sourceTree = "<group>"; };
+		E874127518DF444600CE5E16 /* particle-snow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "particle-snow.png"; sourceTree = "<group>"; };
+		E874127618DF444600CE5E16 /* particle-stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "particle-stars.png"; sourceTree = "<group>"; };
+		E874127718DF444600CE5E16 /* scale-9-demo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scale-9-demo.png"; sourceTree = "<group>"; };
+		E874127818DF444600CE5E16 /* CocosBuilderExample.ccbproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = CocosBuilderExample.ccbproj; sourceTree = "<group>"; };
+		E874127918DF444600CE5E16 /* fileLookup.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = fileLookup.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E874115018DF421A00CE5E16 /* libluabindings iOS.a in Frameworks */,
+				1AC6FB2E180E99EB004C840B /* libbox2d iOS.a in Frameworks */,
+				1AC6FB2F180E99EB004C840B /* libchipmunk iOS.a in Frameworks */,
+				1AC6FB30180E99EB004C840B /* libcocos2dx iOS.a in Frameworks */,
+				1AC6FB31180E99EB004C840B /* libcocos2dx-extensions iOS.a in Frameworks */,
+				1AC6FB32180E99EB004C840B /* libCocosDenshion iOS.a in Frameworks */,
+				D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */,
+				BF1712471292920000B8313A /* libz.dylib in Frameworks */,
+				BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */,
+				D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */,
+				D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */,
+				D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5087E75C17EB910900C73F5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AC6FB1F180E996B004C840B /* libbox2d Mac.a in Frameworks */,
+				1AC6FB20180E996B004C840B /* libchipmunk Mac.a in Frameworks */,
+				1AC6FB21180E996B004C840B /* libcocos2dx Mac.a in Frameworks */,
+				1AC6FB22180E996B004C840B /* libcocos2dx-extensions Mac.a in Frameworks */,
+				1AC6FB23180E996B004C840B /* libCocosDenshion Mac.a in Frameworks */,
+				503AE11217EB99EE00D1A890 /* libcurl.dylib in Frameworks */,
+				5087E76717EB910900C73F5D /* libz.dylib in Frameworks */,
+				503AE11B17EB9C5A00D1A890 /* IOKit.framework in Frameworks */,
+				5087E78B17EB975400C73F5D /* OpenGL.framework in Frameworks */,
+				5087E78917EB974C00C73F5D /* AppKit.framework in Frameworks */,
+				5087E76317EB910900C73F5D /* Foundation.framework in Frameworks */,
+				5087E76517EB910900C73F5D /* CoreGraphics.framework in Frameworks */,
+				5087E76817EB910900C73F5D /* QuartzCore.framework in Frameworks */,
+				5087E76917EB910900C73F5D /* OpenAL.framework in Frameworks */,
+				5087E76A17EB910900C73F5D /* AVFoundation.framework in Frameworks */,
+				5087E76B17EB910900C73F5D /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				E874114B18DF408B00CE5E16 /* LuaObjectCBridgeTest.h */,
+				E874114F18DF409500CE5E16 /* Prefix.pch */,
+				E874114C18DF408B00CE5E16 /* LuaObjectCBridgeTest.mm */,
+				5087E77117EB970100C73F5D /* Icons */,
+				503AE0FA17EB989F00D1A890 /* AppController.h */,
+				503AE0FB17EB989F00D1A890 /* AppController.mm */,
+				503AE0FC17EB989F00D1A890 /* main.m */,
+				503AE0FE17EB989F00D1A890 /* RootViewController.h */,
+				503AE0FF17EB989F00D1A890 /* RootViewController.mm */,
+			);
+			name = ios;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		15AA9C4015B7EC450033D6C2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E874114118DF3E4800CE5E16 /* lua_assetsmanager_test_sample.cpp */,
+				E874114218DF3E4800CE5E16 /* lua_assetsmanager_test_sample.h */,
+				1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */,
+				1AFAF8B416D35DE700DB1158 /* AppDelegate.h */,
+			);
+			name = Classes;
+			path = ../classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* TestLua iOS.app */,
+				5087E76F17EB910900C73F5D /* TestLua Mac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AC6FAE6180E9839004C840B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AC6FAF9180E9839004C840B /* libcocos2dx Mac.a */,
+				1AC6FAFB180E9839004C840B /* libcocos2dx-extensions Mac.a */,
+				1AC6FAFD180E9839004C840B /* libchipmunk Mac.a */,
+				1AC6FAFF180E9839004C840B /* libbox2d Mac.a */,
+				1AC6FB01180E9839004C840B /* libCocosDenshion Mac.a */,
+				1AC6FB03180E9839004C840B /* libjsbindings Mac.a */,
+				1AC6FB05180E9839004C840B /* libluabindings Mac.a */,
+				1AC6FB07180E9839004C840B /* libcocos2dx iOS.a */,
+				1AC6FB09180E9839004C840B /* libcocos2dx-extensions iOS.a */,
+				1AC6FB0B180E9839004C840B /* libchipmunk iOS.a */,
+				1AC6FB0D180E9839004C840B /* libbox2d iOS.a */,
+				1AC6FB0F180E9839004C840B /* libCocosDenshion iOS.a */,
+				1AC6FB11180E9839004C840B /* libjsbindings iOS.a */,
+				1AC6FB13180E9839004C840B /* libluabindings iOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */,
+				15AA9C4015B7EC450033D6C2 /* Classes */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				080E96DDFE201D6D7F000001 /* ios */,
+				503AE10617EB990700D1A890 /* mac */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				78C7DDAA14EBA5050085D0C2 /* Resources */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6B0611A1803AB670077942B /* CoreMotion.framework */,
+				503AE11A17EB9C5A00D1A890 /* IOKit.framework */,
+				503AE11117EB99EE00D1A890 /* libcurl.dylib */,
+				5087E78A17EB975400C73F5D /* OpenGL.framework */,
+				5087E78817EB974C00C73F5D /* AppKit.framework */,
+				1ACB3243164770DE00914215 /* libcurl.a */,
+				BF170DB412928DE900B8313A /* libz.dylib */,
+				D44C620F132DFF4E0009C878 /* AudioToolbox.framework */,
+				D44C620D132DFF430009C878 /* AVFoundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				D44C620B132DFF330009C878 /* OpenAL.framework */,
+				BF170DB012928DE900B8313A /* OpenGLES.framework */,
+				BF1C47EA1293683800B63C5D /* QuartzCore.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		503AE0F517EB97AB00D1A890 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				503AE0F617EB97AB00D1A890 /* Icon.icns */,
+				503AE0F717EB97AB00D1A890 /* Info.plist */,
+			);
+			name = Icons;
+			path = mac;
+			sourceTree = SOURCE_ROOT;
+		};
+		503AE10617EB990700D1A890 /* mac */ = {
+			isa = PBXGroup;
+			children = (
+				503AE0F517EB97AB00D1A890 /* Icons */,
+				503AE10317EB98FF00D1A890 /* main.cpp */,
+			);
+			name = mac;
+			sourceTree = "<group>";
+		};
+		5087E77117EB970100C73F5D /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				5087E77217EB970100C73F5D /* Default-568h@2x.png */,
+				5087E77317EB970100C73F5D /* Default.png */,
+				5087E77417EB970100C73F5D /* Default@2x.png */,
+				50EF62A017ECD613001EB2F8 /* Icon-29.png */,
+				50EF62A117ECD613001EB2F8 /* Icon-50.png */,
+				50EF629217ECD46A001EB2F8 /* Icon-40.png */,
+				50EF629317ECD46A001EB2F8 /* Icon-58.png */,
+				50EF629417ECD46A001EB2F8 /* Icon-80.png */,
+				50EF629517ECD46A001EB2F8 /* Icon-100.png */,
+				5087E77517EB970100C73F5D /* Icon-114.png */,
+				5087E77617EB970100C73F5D /* Icon-120.png */,
+				5087E77717EB970100C73F5D /* Icon-144.png */,
+				5087E77817EB970100C73F5D /* Icon-152.png */,
+				5087E77917EB970100C73F5D /* Icon-57.png */,
+				5087E77A17EB970100C73F5D /* Icon-72.png */,
+				5087E77B17EB970100C73F5D /* Icon-76.png */,
+				5087E77C17EB970100C73F5D /* Info.plist */,
+			);
+			name = Icons;
+			path = ios;
+			sourceTree = SOURCE_ROOT;
+		};
+		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E874123B18DF444600CE5E16 /* cocosbuilderRes */,
+				E874115118DF42E500CE5E16 /* luaScript */,
+			);
+			name = Resources;
+			path = ../Resources;
+			sourceTree = "<group>";
+		};
+		E874115118DF42E500CE5E16 /* luaScript */ = {
+			isa = PBXGroup;
+			children = (
+				E874115218DF42E500CE5E16 /* AccelerometerTest */,
+				E874115418DF42E500CE5E16 /* ActionManagerTest */,
+				E874115618DF42E500CE5E16 /* ActionsEaseTest */,
+				E874115818DF42E500CE5E16 /* ActionsProgressTest */,
+				E874115A18DF42E500CE5E16 /* ActionsTest */,
+				E874115C18DF42E500CE5E16 /* AssetsManagerTest */,
+				E874115F18DF42E500CE5E16 /* BugsTest */,
+				E874116118DF42E500CE5E16 /* ClickAndMoveTest */,
+				E874116318DF42E500CE5E16 /* CocosDenshionTest */,
+				E874116518DF42E500CE5E16 /* CocoStudioTest */,
+				E874117118DF42E500CE5E16 /* controller.lua */,
+				E874117218DF42E500CE5E16 /* CurrentLanguageTest */,
+				E874117418DF42E500CE5E16 /* DrawPrimitivesTest */,
+				E874117618DF42E500CE5E16 /* EffectsAdvancedTest */,
+				E874117818DF42E500CE5E16 /* EffectsTest */,
+				E874117B18DF42E500CE5E16 /* ExtensionTest */,
+				E874117F18DF42E500CE5E16 /* FontTest */,
+				E874118118DF42E500CE5E16 /* helper.lua */,
+				E874118218DF42E500CE5E16 /* IntervalTest */,
+				E874118418DF42E500CE5E16 /* KeypadTest */,
+				E874118618DF42E500CE5E16 /* LabelTest */,
+				E874118818DF42E500CE5E16 /* LabelTestNew */,
+				E874118A18DF42E500CE5E16 /* LayerTest */,
+				E874118C18DF42E500CE5E16 /* LuaBridgeTest */,
+				E874118E18DF42E500CE5E16 /* mainMenu.lua */,
+				E874118F18DF42E500CE5E16 /* MenuTest */,
+				E874119118DF42E500CE5E16 /* MotionStreakTest */,
+				E874119318DF42E500CE5E16 /* NewEventDispatcherTest */,
+				E874119518DF42E500CE5E16 /* NodeTest */,
+				E874119718DF42E500CE5E16 /* OpenGLTest */,
+				E874119918DF42E500CE5E16 /* ParallaxTest */,
+				E874119B18DF42E500CE5E16 /* ParticleTest */,
+				E874119D18DF42E500CE5E16 /* PerformanceTest */,
+				E87411A018DF42E500CE5E16 /* PhysicsTest */,
+				E87411A218DF42E500CE5E16 /* RenderTextureTest */,
+				E87411A418DF42E500CE5E16 /* RotateWorldTest */,
+				E87411A618DF42E500CE5E16 /* SceneTest */,
+				E87411A818DF42E500CE5E16 /* SpineTest */,
+				E87411AA18DF42E500CE5E16 /* SpriteTest */,
+				E87411AC18DF42E500CE5E16 /* testResource.lua */,
+				E87411AD18DF42E500CE5E16 /* Texture2dTest */,
+				E87411AF18DF42E500CE5E16 /* TileMapTest */,
+				E87411B118DF42E500CE5E16 /* TouchesTest */,
+				E87411B518DF42E500CE5E16 /* TransitionsTest */,
+				E87411B818DF42E500CE5E16 /* UserDefaultTest */,
+				E87411BA18DF42E500CE5E16 /* VisibleRect.lua */,
+				E87411BB18DF42E500CE5E16 /* XMLHttpRequestTest */,
+				E87411BD18DF42E500CE5E16 /* ZwoptexTest */,
+			);
+			path = luaScript;
+			sourceTree = "<group>";
+		};
+		E874115218DF42E500CE5E16 /* AccelerometerTest */ = {
+			isa = PBXGroup;
+			children = (
+				E874115318DF42E500CE5E16 /* AccelerometerTest.lua */,
+			);
+			path = AccelerometerTest;
+			sourceTree = "<group>";
+		};
+		E874115418DF42E500CE5E16 /* ActionManagerTest */ = {
+			isa = PBXGroup;
+			children = (
+				E874115518DF42E500CE5E16 /* ActionManagerTest.lua */,
+			);
+			path = ActionManagerTest;
+			sourceTree = "<group>";
+		};
+		E874115618DF42E500CE5E16 /* ActionsEaseTest */ = {
+			isa = PBXGroup;
+			children = (
+				E874115718DF42E500CE5E16 /* ActionsEaseTest.lua */,
+			);
+			path = ActionsEaseTest;
+			sourceTree = "<group>";
+		};
+		E874115818DF42E500CE5E16 /* ActionsProgressTest */ = {
+			isa = PBXGroup;
+			children = (
+				E874115918DF42E500CE5E16 /* ActionsProgressTest.lua */,
+			);
+			path = ActionsProgressTest;
+			sourceTree = "<group>";
+		};
+		E874115A18DF42E500CE5E16 /* ActionsTest */ = {
+			isa = PBXGroup;
+			children = (
+				E874115B18DF42E500CE5E16 /* ActionsTest.lua */,
+			);
+			path = ActionsTest;
+			sourceTree = "<group>";
+		};
+		E874115C18DF42E500CE5E16 /* AssetsManagerTest */ = {
+			isa = PBXGroup;
+			children = (
+				E874115D18DF42E500CE5E16 /* AssetsManagerModule.lua */,
+				E874115E18DF42E500CE5E16 /* AssetsManagerTest.lua */,
+			);
+			path = AssetsManagerTest;
+			sourceTree = "<group>";
+		};
+		E874115F18DF42E500CE5E16 /* BugsTest */ = {
+			isa = PBXGroup;
+			children = (
+				E874116018DF42E500CE5E16 /* BugsTest.lua */,
+			);
+			path = BugsTest;
+			sourceTree = "<group>";
+		};
+		E874116118DF42E500CE5E16 /* ClickAndMoveTest */ = {
+			isa = PBXGroup;
+			children = (
+				E874116218DF42E500CE5E16 /* ClickAndMoveTest.lua */,
+			);
+			path = ClickAndMoveTest;
+			sourceTree = "<group>";
+		};
+		E874116318DF42E500CE5E16 /* CocosDenshionTest */ = {
+			isa = PBXGroup;
+			children = (
+				E874116418DF42E500CE5E16 /* CocosDenshionTest.lua */,
+			);
+			path = CocosDenshionTest;
+			sourceTree = "<group>";
+		};
+		E874116518DF42E500CE5E16 /* CocoStudioTest */ = {
+			isa = PBXGroup;
+			children = (
+				E874116618DF42E500CE5E16 /* CocoStudioArmatureTest */,
+				E874116818DF42E500CE5E16 /* CocoStudioGUITest */,
+				E874116A18DF42E500CE5E16 /* CocoStudioSceneTest */,
+				E874117018DF42E500CE5E16 /* CocoStudioTest.lua */,
+			);
+			path = CocoStudioTest;
+			sourceTree = "<group>";
+		};
+		E874116618DF42E500CE5E16 /* CocoStudioArmatureTest */ = {
+			isa = PBXGroup;
+			children = (
+				E874116718DF42E500CE5E16 /* CocoStudioArmatureTest.lua */,
+			);
+			path = CocoStudioArmatureTest;
+			sourceTree = "<group>";
+		};
+		E874116818DF42E500CE5E16 /* CocoStudioGUITest */ = {
+			isa = PBXGroup;
+			children = (
+				E874116918DF42E500CE5E16 /* CocoStudioGUITest.lua */,
+			);
+			path = CocoStudioGUITest;
+			sourceTree = "<group>";
+		};
+		E874116A18DF42E500CE5E16 /* CocoStudioSceneTest */ = {
+			isa = PBXGroup;
+			children = (
+				E874116B18DF42E500CE5E16 /* CocoStudioSceneTest.lua */,
+				E874116C18DF42E500CE5E16 /* TriggerCode */,
+			);
+			path = CocoStudioSceneTest;
+			sourceTree = "<group>";
+		};
+		E874116C18DF42E500CE5E16 /* TriggerCode */ = {
+			isa = PBXGroup;
+			children = (
+				E874116D18DF42E500CE5E16 /* acts.lua */,
+				E874116E18DF42E500CE5E16 /* cons.lua */,
+				E874116F18DF42E500CE5E16 /* eventDef.lua */,
+			);
+			path = TriggerCode;
+			sourceTree = "<group>";
+		};
+		E874117218DF42E500CE5E16 /* CurrentLanguageTest */ = {
+			isa = PBXGroup;
+			children = (
+				E874117318DF42E500CE5E16 /* CurrentLanguageTest.lua */,
+			);
+			path = CurrentLanguageTest;
+			sourceTree = "<group>";
+		};
+		E874117418DF42E500CE5E16 /* DrawPrimitivesTest */ = {
+			isa = PBXGroup;
+			children = (
+				E874117518DF42E500CE5E16 /* DrawPrimitivesTest.lua */,
+			);
+			path = DrawPrimitivesTest;
+			sourceTree = "<group>";
+		};
+		E874117618DF42E500CE5E16 /* EffectsAdvancedTest */ = {
+			isa = PBXGroup;
+			children = (
+				E874117718DF42E500CE5E16 /* EffectsAdvancedTest.lua */,
+			);
+			path = EffectsAdvancedTest;
+			sourceTree = "<group>";
+		};
+		E874117818DF42E500CE5E16 /* EffectsTest */ = {
+			isa = PBXGroup;
+			children = (
+				E874117918DF42E500CE5E16 /* EffectsName.lua */,
+				E874117A18DF42E500CE5E16 /* EffectsTest.lua */,
+			);
+			path = EffectsTest;
+			sourceTree = "<group>";
+		};
+		E874117B18DF42E500CE5E16 /* ExtensionTest */ = {
+			isa = PBXGroup;
+			children = (
+				E874117C18DF42E500CE5E16 /* CocosBuilderTest.lua */,
+				E874117D18DF42E500CE5E16 /* ExtensionTest.lua */,
+				E874117E18DF42E500CE5E16 /* WebProxyTest.lua */,
+			);
+			path = ExtensionTest;
+			sourceTree = "<group>";
+		};
+		E874117F18DF42E500CE5E16 /* FontTest */ = {
+			isa = PBXGroup;
+			children = (
+				E874118018DF42E500CE5E16 /* FontTest.lua */,
+			);
+			path = FontTest;
+			sourceTree = "<group>";
+		};
+		E874118218DF42E500CE5E16 /* IntervalTest */ = {
+			isa = PBXGroup;
+			children = (
+				E874118318DF42E500CE5E16 /* IntervalTest.lua */,
+			);
+			path = IntervalTest;
+			sourceTree = "<group>";
+		};
+		E874118418DF42E500CE5E16 /* KeypadTest */ = {
+			isa = PBXGroup;
+			children = (
+				E874118518DF42E500CE5E16 /* KeypadTest.lua */,
+			);
+			path = KeypadTest;
+			sourceTree = "<group>";
+		};
+		E874118618DF42E500CE5E16 /* LabelTest */ = {
+			isa = PBXGroup;
+			children = (
+				E874118718DF42E500CE5E16 /* LabelTest.lua */,
+			);
+			path = LabelTest;
+			sourceTree = "<group>";
+		};
+		E874118818DF42E500CE5E16 /* LabelTestNew */ = {
+			isa = PBXGroup;
+			children = (
+				E874118918DF42E500CE5E16 /* LabelTestNew.lua */,
+			);
+			path = LabelTestNew;
+			sourceTree = "<group>";
+		};
+		E874118A18DF42E500CE5E16 /* LayerTest */ = {
+			isa = PBXGroup;
+			children = (
+				E874118B18DF42E500CE5E16 /* LayerTest.lua */,
+			);
+			path = LayerTest;
+			sourceTree = "<group>";
+		};
+		E874118C18DF42E500CE5E16 /* LuaBridgeTest */ = {
+			isa = PBXGroup;
+			children = (
+				E874118D18DF42E500CE5E16 /* LuaBridgeTest.lua */,
+			);
+			path = LuaBridgeTest;
+			sourceTree = "<group>";
+		};
+		E874118F18DF42E500CE5E16 /* MenuTest */ = {
+			isa = PBXGroup;
+			children = (
+				E874119018DF42E500CE5E16 /* MenuTest.lua */,
+			);
+			path = MenuTest;
+			sourceTree = "<group>";
+		};
+		E874119118DF42E500CE5E16 /* MotionStreakTest */ = {
+			isa = PBXGroup;
+			children = (
+				E874119218DF42E500CE5E16 /* MotionStreakTest.lua */,
+			);
+			path = MotionStreakTest;
+			sourceTree = "<group>";
+		};
+		E874119318DF42E500CE5E16 /* NewEventDispatcherTest */ = {
+			isa = PBXGroup;
+			children = (
+				E874119418DF42E500CE5E16 /* NewEventDispatcherTest.lua */,
+			);
+			path = NewEventDispatcherTest;
+			sourceTree = "<group>";
+		};
+		E874119518DF42E500CE5E16 /* NodeTest */ = {
+			isa = PBXGroup;
+			children = (
+				E874119618DF42E500CE5E16 /* NodeTest.lua */,
+			);
+			path = NodeTest;
+			sourceTree = "<group>";
+		};
+		E874119718DF42E500CE5E16 /* OpenGLTest */ = {
+			isa = PBXGroup;
+			children = (
+				E874119818DF42E500CE5E16 /* OpenGLTest.lua */,
+			);
+			path = OpenGLTest;
+			sourceTree = "<group>";
+		};
+		E874119918DF42E500CE5E16 /* ParallaxTest */ = {
+			isa = PBXGroup;
+			children = (
+				E874119A18DF42E500CE5E16 /* ParallaxTest.lua */,
+			);
+			path = ParallaxTest;
+			sourceTree = "<group>";
+		};
+		E874119B18DF42E500CE5E16 /* ParticleTest */ = {
+			isa = PBXGroup;
+			children = (
+				E874119C18DF42E500CE5E16 /* ParticleTest.lua */,
+			);
+			path = ParticleTest;
+			sourceTree = "<group>";
+		};
+		E874119D18DF42E500CE5E16 /* PerformanceTest */ = {
+			isa = PBXGroup;
+			children = (
+				E874119E18DF42E500CE5E16 /* PerformanceSpriteTest.lua */,
+				E874119F18DF42E500CE5E16 /* PerformanceTest.lua */,
+			);
+			path = PerformanceTest;
+			sourceTree = "<group>";
+		};
+		E87411A018DF42E500CE5E16 /* PhysicsTest */ = {
+			isa = PBXGroup;
+			children = (
+				E87411A118DF42E500CE5E16 /* PhysicsTest.lua */,
+			);
+			path = PhysicsTest;
+			sourceTree = "<group>";
+		};
+		E87411A218DF42E500CE5E16 /* RenderTextureTest */ = {
+			isa = PBXGroup;
+			children = (
+				E87411A318DF42E500CE5E16 /* RenderTextureTest.lua */,
+			);
+			path = RenderTextureTest;
+			sourceTree = "<group>";
+		};
+		E87411A418DF42E500CE5E16 /* RotateWorldTest */ = {
+			isa = PBXGroup;
+			children = (
+				E87411A518DF42E500CE5E16 /* RotateWorldTest.lua */,
+			);
+			path = RotateWorldTest;
+			sourceTree = "<group>";
+		};
+		E87411A618DF42E500CE5E16 /* SceneTest */ = {
+			isa = PBXGroup;
+			children = (
+				E87411A718DF42E500CE5E16 /* SceneTest.lua */,
+			);
+			path = SceneTest;
+			sourceTree = "<group>";
+		};
+		E87411A818DF42E500CE5E16 /* SpineTest */ = {
+			isa = PBXGroup;
+			children = (
+				E87411A918DF42E500CE5E16 /* SpineTest.lua */,
+			);
+			path = SpineTest;
+			sourceTree = "<group>";
+		};
+		E87411AA18DF42E500CE5E16 /* SpriteTest */ = {
+			isa = PBXGroup;
+			children = (
+				E87411AB18DF42E500CE5E16 /* SpriteTest.lua */,
+			);
+			path = SpriteTest;
+			sourceTree = "<group>";
+		};
+		E87411AD18DF42E500CE5E16 /* Texture2dTest */ = {
+			isa = PBXGroup;
+			children = (
+				E87411AE18DF42E500CE5E16 /* Texture2dTest.lua */,
+			);
+			path = Texture2dTest;
+			sourceTree = "<group>";
+		};
+		E87411AF18DF42E500CE5E16 /* TileMapTest */ = {
+			isa = PBXGroup;
+			children = (
+				E87411B018DF42E500CE5E16 /* TileMapTest.lua */,
+			);
+			path = TileMapTest;
+			sourceTree = "<group>";
+		};
+		E87411B118DF42E500CE5E16 /* TouchesTest */ = {
+			isa = PBXGroup;
+			children = (
+				E87411B218DF42E500CE5E16 /* Ball.lua */,
+				E87411B318DF42E500CE5E16 /* Paddle.lua */,
+				E87411B418DF42E500CE5E16 /* TouchesTest.lua */,
+			);
+			path = TouchesTest;
+			sourceTree = "<group>";
+		};
+		E87411B518DF42E500CE5E16 /* TransitionsTest */ = {
+			isa = PBXGroup;
+			children = (
+				E87411B618DF42E500CE5E16 /* TransitionsName.lua */,
+				E87411B718DF42E500CE5E16 /* TransitionsTest.lua */,
+			);
+			path = TransitionsTest;
+			sourceTree = "<group>";
+		};
+		E87411B818DF42E500CE5E16 /* UserDefaultTest */ = {
+			isa = PBXGroup;
+			children = (
+				E87411B918DF42E500CE5E16 /* UserDefaultTest.lua */,
+			);
+			path = UserDefaultTest;
+			sourceTree = "<group>";
+		};
+		E87411BB18DF42E500CE5E16 /* XMLHttpRequestTest */ = {
+			isa = PBXGroup;
+			children = (
+				E87411BC18DF42E500CE5E16 /* XMLHttpRequestTest.lua */,
+			);
+			path = XMLHttpRequestTest;
+			sourceTree = "<group>";
+		};
+		E87411BD18DF42E500CE5E16 /* ZwoptexTest */ = {
+			isa = PBXGroup;
+			children = (
+				E87411BE18DF42E500CE5E16 /* ZwoptexTest.lua */,
+			);
+			path = ZwoptexTest;
+			sourceTree = "<group>";
+		};
+		E874123B18DF444600CE5E16 /* cocosbuilderRes */ = {
+			isa = PBXGroup;
+			children = (
+				E874123C18DF444600CE5E16 /* ccb */,
+				E874127818DF444600CE5E16 /* CocosBuilderExample.ccbproj */,
+				E874127918DF444600CE5E16 /* fileLookup.plist */,
+			);
+			name = cocosbuilderRes;
+			path = "../../../cocos2d-x-3.0beta2/samples/Lua/TestLua/Resources/cocosbuilderRes";
+			sourceTree = "<group>";
+		};
+		E874123C18DF444600CE5E16 /* ccb */ = {
+			isa = PBXGroup;
+			children = (
+				E874123D18DF444600CE5E16 /* animated-grossini.plist */,
+				E874123E18DF444600CE5E16 /* animated-grossini.png */,
+				E874123F18DF444600CE5E16 /* btn-a-0.png */,
+				E874124018DF444600CE5E16 /* btn-a-1.png */,
+				E874124118DF444600CE5E16 /* btn-a-2.png */,
+				E874124218DF444600CE5E16 /* btn-b-0.png */,
+				E874124318DF444600CE5E16 /* btn-b-1.png */,
+				E874124418DF444600CE5E16 /* btn-b-2.png */,
+				E874124518DF444600CE5E16 /* btn-back-0.png */,
+				E874124618DF444600CE5E16 /* btn-back-1.png */,
+				E874124718DF444600CE5E16 /* btn-test-0.png */,
+				E874124818DF444600CE5E16 /* btn-test-1.png */,
+				E874124918DF444600CE5E16 /* btn-test-2.png */,
+				E874124A18DF444600CE5E16 /* burst.png */,
+				E874124B18DF444600CE5E16 /* ccb */,
+				E874126218DF444600CE5E16 /* ccbParticleStars.png */,
+				E874126318DF444600CE5E16 /* comic andy.ttf */,
+				E874126418DF444600CE5E16 /* fileLookup.plist */,
+				E874126518DF444600CE5E16 /* flower.jpg */,
+				E874126618DF444600CE5E16 /* gem-0.wav */,
+				E874126718DF444600CE5E16 /* gem-1.wav */,
+				E874126818DF444600CE5E16 /* grossini-generic.plist */,
+				E874126918DF444600CE5E16 /* grossini-generic.png */,
+				E874126A18DF444600CE5E16 /* HelloCocosBuilder.ccb */,
+				E874126B18DF444600CE5E16 /* HelloCocosBuilder.ccbi */,
+				E874126C18DF444600CE5E16 /* jungle-left.png */,
+				E874126D18DF444600CE5E16 /* jungle-right.png */,
+				E874126E18DF444600CE5E16 /* jungle.png */,
+				E874126F18DF444600CE5E16 /* logo-icon.png */,
+				E874127018DF444600CE5E16 /* logo.png */,
+				E874127118DF444600CE5E16 /* markerfelt24shadow.fnt */,
+				E874127218DF444600CE5E16 /* markerfelt24shadow.png */,
+				E874127318DF444600CE5E16 /* particle-fire.png */,
+				E874127418DF444600CE5E16 /* particle-smoke.png */,
+				E874127518DF444600CE5E16 /* particle-snow.png */,
+				E874127618DF444600CE5E16 /* particle-stars.png */,
+				E874127718DF444600CE5E16 /* scale-9-demo.png */,
+			);
+			path = ccb;
+			sourceTree = "<group>";
+		};
+		E874124B18DF444600CE5E16 /* ccb */ = {
+			isa = PBXGroup;
+			children = (
+				E874124C18DF444600CE5E16 /* TestAnimations.ccb */,
+				E874124D18DF444600CE5E16 /* TestAnimations.ccbi */,
+				E874124E18DF444600CE5E16 /* TestAnimationsSub.ccb */,
+				E874124F18DF444600CE5E16 /* TestAnimationsSub.ccbi */,
+				E874125018DF444600CE5E16 /* TestButtons.ccb */,
+				E874125118DF444600CE5E16 /* TestButtons.ccbi */,
+				E874125218DF444600CE5E16 /* TestHeader.ccb */,
+				E874125318DF444600CE5E16 /* TestHeader.ccbi */,
+				E874125418DF444600CE5E16 /* TestLabels.ccb */,
+				E874125518DF444600CE5E16 /* TestLabels.ccbi */,
+				E874125618DF444600CE5E16 /* TestMenus.ccb */,
+				E874125718DF444600CE5E16 /* TestMenus.ccbi */,
+				E874125818DF444600CE5E16 /* TestParticleSystems.ccb */,
+				E874125918DF444600CE5E16 /* TestParticleSystems.ccbi */,
+				E874125A18DF444600CE5E16 /* TestScrollViews.ccb */,
+				E874125B18DF444600CE5E16 /* TestScrollViews.ccbi */,
+				E874125C18DF444600CE5E16 /* TestScrollViewsContentA.ccb */,
+				E874125D18DF444600CE5E16 /* TestScrollViewsContentA.ccbi */,
+				E874125E18DF444600CE5E16 /* TestSprites.ccb */,
+				E874125F18DF444600CE5E16 /* TestSprites.ccbi */,
+				E874126018DF444600CE5E16 /* TestTimelineCallback.ccb */,
+				E874126118DF444600CE5E16 /* TestTimelineCallback.ccbi */,
+			);
+			path = ccb;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* TestLua iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "TestLua iOS" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AC6FB25180E99E1004C840B /* PBXTargetDependency */,
+				1AC6FB27180E99E1004C840B /* PBXTargetDependency */,
+				1AC6FB29180E99E1004C840B /* PBXTargetDependency */,
+				1AC6FB2B180E99E1004C840B /* PBXTargetDependency */,
+				1AC6FB2D180E99E1004C840B /* PBXTargetDependency */,
+			);
+			name = "TestLua iOS";
+			productName = iphone;
+			productReference = 1D6058910D05DD3D006BFB54 /* TestLua iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5087E73D17EB910900C73F5D /* TestLua Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5087E76C17EB910900C73F5D /* Build configuration list for PBXNativeTarget "TestLua Mac" */;
+			buildPhases = (
+				5087E74817EB910900C73F5D /* Resources */,
+				5087E75617EB910900C73F5D /* Sources */,
+				5087E75C17EB910900C73F5D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AC6FB1E180E9963004C840B /* PBXTargetDependency */,
+				1AC6FB16180E9959004C840B /* PBXTargetDependency */,
+				1AC6FB18180E9959004C840B /* PBXTargetDependency */,
+				1AC6FB1A180E9959004C840B /* PBXTargetDependency */,
+				1AC6FB1C180E9959004C840B /* PBXTargetDependency */,
+			);
+			name = "TestLua Mac";
+			productName = iphone;
+			productReference = 5087E76F17EB910900C73F5D /* TestLua Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = MDDB52YB8L;
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TestLua" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1AC6FAE6180E9839004C840B /* Products */;
+					ProjectRef = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* TestLua iOS */,
+				5087E73D17EB910900C73F5D /* TestLua Mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1AC6FAF9180E9839004C840B /* libcocos2dx Mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libcocos2dx Mac.a";
+			remoteRef = 1AC6FAF8180E9839004C840B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AC6FAFB180E9839004C840B /* libcocos2dx-extensions Mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libcocos2dx-extensions Mac.a";
+			remoteRef = 1AC6FAFA180E9839004C840B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AC6FAFD180E9839004C840B /* libchipmunk Mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libchipmunk Mac.a";
+			remoteRef = 1AC6FAFC180E9839004C840B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AC6FAFF180E9839004C840B /* libbox2d Mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libbox2d Mac.a";
+			remoteRef = 1AC6FAFE180E9839004C840B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AC6FB01180E9839004C840B /* libCocosDenshion Mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libCocosDenshion Mac.a";
+			remoteRef = 1AC6FB00180E9839004C840B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AC6FB03180E9839004C840B /* libjsbindings Mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libjsbindings Mac.a";
+			remoteRef = 1AC6FB02180E9839004C840B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AC6FB05180E9839004C840B /* libluabindings Mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libluabindings Mac.a";
+			remoteRef = 1AC6FB04180E9839004C840B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AC6FB07180E9839004C840B /* libcocos2dx iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libcocos2dx iOS.a";
+			remoteRef = 1AC6FB06180E9839004C840B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AC6FB09180E9839004C840B /* libcocos2dx-extensions iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libcocos2dx-extensions iOS.a";
+			remoteRef = 1AC6FB08180E9839004C840B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AC6FB0B180E9839004C840B /* libchipmunk iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libchipmunk iOS.a";
+			remoteRef = 1AC6FB0A180E9839004C840B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AC6FB0D180E9839004C840B /* libbox2d iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libbox2d iOS.a";
+			remoteRef = 1AC6FB0C180E9839004C840B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AC6FB0F180E9839004C840B /* libCocosDenshion iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libCocosDenshion iOS.a";
+			remoteRef = 1AC6FB0E180E9839004C840B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AC6FB11180E9839004C840B /* libjsbindings iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libjsbindings iOS.a";
+			remoteRef = 1AC6FB10180E9839004C840B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1AC6FB13180E9839004C840B /* libluabindings iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libluabindings iOS.a";
+			remoteRef = 1AC6FB12180E9839004C840B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5087E78117EB970100C73F5D /* Icon-120.png in Resources */,
+				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
+				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
+				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
+				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
+				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
+				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
+				50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */,
+				5087E78017EB970100C73F5D /* Icon-114.png in Resources */,
+				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
+				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
+				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
+				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
+				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
+				5087E77E17EB970100C73F5D /* Default.png in Resources */,
+				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
+				E87411BF18DF42E500CE5E16 /* AccelerometerTest.lua in Resources */,
+				E87411C118DF42E500CE5E16 /* ActionManagerTest.lua in Resources */,
+				E87411C318DF42E500CE5E16 /* ActionsEaseTest.lua in Resources */,
+				E87411C518DF42E500CE5E16 /* ActionsProgressTest.lua in Resources */,
+				E87411C718DF42E500CE5E16 /* ActionsTest.lua in Resources */,
+				E87411C918DF42E500CE5E16 /* AssetsManagerModule.lua in Resources */,
+				E87411CB18DF42E500CE5E16 /* AssetsManagerTest.lua in Resources */,
+				E87411CD18DF42E500CE5E16 /* BugsTest.lua in Resources */,
+				E87411CF18DF42E500CE5E16 /* ClickAndMoveTest.lua in Resources */,
+				E87411D118DF42E500CE5E16 /* CocosDenshionTest.lua in Resources */,
+				E87411D318DF42E500CE5E16 /* CocoStudioArmatureTest.lua in Resources */,
+				E87411D518DF42E500CE5E16 /* CocoStudioGUITest.lua in Resources */,
+				E87411D718DF42E500CE5E16 /* CocoStudioSceneTest.lua in Resources */,
+				E87411D918DF42E500CE5E16 /* acts.lua in Resources */,
+				E87411DB18DF42E500CE5E16 /* cons.lua in Resources */,
+				E87411DD18DF42E500CE5E16 /* eventDef.lua in Resources */,
+				E87411DF18DF42E500CE5E16 /* CocoStudioTest.lua in Resources */,
+				E87411E118DF42E500CE5E16 /* controller.lua in Resources */,
+				E87411E318DF42E500CE5E16 /* CurrentLanguageTest.lua in Resources */,
+				E87411E518DF42E500CE5E16 /* DrawPrimitivesTest.lua in Resources */,
+				E87411E718DF42E500CE5E16 /* EffectsAdvancedTest.lua in Resources */,
+				E87411E918DF42E500CE5E16 /* EffectsName.lua in Resources */,
+				E87411EB18DF42E500CE5E16 /* EffectsTest.lua in Resources */,
+				E87411ED18DF42E500CE5E16 /* CocosBuilderTest.lua in Resources */,
+				E87411EF18DF42E500CE5E16 /* ExtensionTest.lua in Resources */,
+				E87411F118DF42E500CE5E16 /* WebProxyTest.lua in Resources */,
+				E87411F318DF42E500CE5E16 /* FontTest.lua in Resources */,
+				E87411F518DF42E500CE5E16 /* helper.lua in Resources */,
+				E87411F718DF42E500CE5E16 /* IntervalTest.lua in Resources */,
+				E87411F918DF42E500CE5E16 /* KeypadTest.lua in Resources */,
+				E87411FB18DF42E500CE5E16 /* LabelTest.lua in Resources */,
+				E87411FD18DF42E500CE5E16 /* LabelTestNew.lua in Resources */,
+				E87411FF18DF42E500CE5E16 /* LayerTest.lua in Resources */,
+				E874120118DF42E500CE5E16 /* LuaBridgeTest.lua in Resources */,
+				E874120318DF42E500CE5E16 /* mainMenu.lua in Resources */,
+				E874120518DF42E500CE5E16 /* MenuTest.lua in Resources */,
+				E874120718DF42E500CE5E16 /* MotionStreakTest.lua in Resources */,
+				E874120918DF42E500CE5E16 /* NewEventDispatcherTest.lua in Resources */,
+				E874120B18DF42E500CE5E16 /* NodeTest.lua in Resources */,
+				E874120D18DF42E500CE5E16 /* OpenGLTest.lua in Resources */,
+				E874120F18DF42E500CE5E16 /* ParallaxTest.lua in Resources */,
+				E874121118DF42E500CE5E16 /* ParticleTest.lua in Resources */,
+				E874121318DF42E500CE5E16 /* PerformanceSpriteTest.lua in Resources */,
+				E874121518DF42E500CE5E16 /* PerformanceTest.lua in Resources */,
+				E874121718DF42E500CE5E16 /* PhysicsTest.lua in Resources */,
+				E874121918DF42E500CE5E16 /* RenderTextureTest.lua in Resources */,
+				E874121B18DF42E500CE5E16 /* RotateWorldTest.lua in Resources */,
+				E874121D18DF42E500CE5E16 /* SceneTest.lua in Resources */,
+				E874121F18DF42E500CE5E16 /* SpineTest.lua in Resources */,
+				E874122118DF42E500CE5E16 /* SpriteTest.lua in Resources */,
+				E874122318DF42E500CE5E16 /* testResource.lua in Resources */,
+				E874122518DF42E500CE5E16 /* Texture2dTest.lua in Resources */,
+				E874122718DF42E500CE5E16 /* TileMapTest.lua in Resources */,
+				E874122918DF42E500CE5E16 /* Ball.lua in Resources */,
+				E874122B18DF42E500CE5E16 /* Paddle.lua in Resources */,
+				E874122D18DF42E500CE5E16 /* TouchesTest.lua in Resources */,
+				E874122F18DF42E500CE5E16 /* TransitionsName.lua in Resources */,
+				E874123118DF42E500CE5E16 /* TransitionsTest.lua in Resources */,
+				E874123318DF42E500CE5E16 /* UserDefaultTest.lua in Resources */,
+				E874123518DF42E500CE5E16 /* VisibleRect.lua in Resources */,
+				E874123718DF42E500CE5E16 /* XMLHttpRequestTest.lua in Resources */,
+				E874123918DF42E500CE5E16 /* ZwoptexTest.lua in Resources */,
+				E874127A18DF444600CE5E16 /* animated-grossini.plist in Resources */,
+				E874127C18DF444600CE5E16 /* animated-grossini.png in Resources */,
+				E874127E18DF444600CE5E16 /* btn-a-0.png in Resources */,
+				E874128018DF444600CE5E16 /* btn-a-1.png in Resources */,
+				E874128218DF444600CE5E16 /* btn-a-2.png in Resources */,
+				E874128418DF444600CE5E16 /* btn-b-0.png in Resources */,
+				E874128618DF444600CE5E16 /* btn-b-1.png in Resources */,
+				E874128818DF444600CE5E16 /* btn-b-2.png in Resources */,
+				E874128A18DF444600CE5E16 /* btn-back-0.png in Resources */,
+				E874128C18DF444600CE5E16 /* btn-back-1.png in Resources */,
+				E874128E18DF444600CE5E16 /* btn-test-0.png in Resources */,
+				E874129018DF444600CE5E16 /* btn-test-1.png in Resources */,
+				E874129218DF444600CE5E16 /* btn-test-2.png in Resources */,
+				E874129418DF444600CE5E16 /* burst.png in Resources */,
+				E874129618DF444600CE5E16 /* TestAnimations.ccb in Resources */,
+				E874129818DF444600CE5E16 /* TestAnimations.ccbi in Resources */,
+				E874129A18DF444600CE5E16 /* TestAnimationsSub.ccb in Resources */,
+				E874129C18DF444600CE5E16 /* TestAnimationsSub.ccbi in Resources */,
+				E874129E18DF444600CE5E16 /* TestButtons.ccb in Resources */,
+				E87412A018DF444600CE5E16 /* TestButtons.ccbi in Resources */,
+				E87412A218DF444600CE5E16 /* TestHeader.ccb in Resources */,
+				E87412A418DF444600CE5E16 /* TestHeader.ccbi in Resources */,
+				E87412A618DF444600CE5E16 /* TestLabels.ccb in Resources */,
+				E87412A818DF444600CE5E16 /* TestLabels.ccbi in Resources */,
+				E87412AA18DF444600CE5E16 /* TestMenus.ccb in Resources */,
+				E87412AC18DF444600CE5E16 /* TestMenus.ccbi in Resources */,
+				E87412AE18DF444600CE5E16 /* TestParticleSystems.ccb in Resources */,
+				E87412B018DF444600CE5E16 /* TestParticleSystems.ccbi in Resources */,
+				E87412B218DF444600CE5E16 /* TestScrollViews.ccb in Resources */,
+				E87412B418DF444600CE5E16 /* TestScrollViews.ccbi in Resources */,
+				E87412B618DF444600CE5E16 /* TestScrollViewsContentA.ccb in Resources */,
+				E87412B818DF444600CE5E16 /* TestScrollViewsContentA.ccbi in Resources */,
+				E87412BA18DF444600CE5E16 /* TestSprites.ccb in Resources */,
+				E87412BC18DF444600CE5E16 /* TestSprites.ccbi in Resources */,
+				E87412BE18DF444600CE5E16 /* TestTimelineCallback.ccb in Resources */,
+				E87412C018DF444600CE5E16 /* TestTimelineCallback.ccbi in Resources */,
+				E87412C218DF444600CE5E16 /* ccbParticleStars.png in Resources */,
+				E87412C418DF444600CE5E16 /* comic andy.ttf in Resources */,
+				E87412C618DF444600CE5E16 /* fileLookup.plist in Resources */,
+				E87412C818DF444600CE5E16 /* flower.jpg in Resources */,
+				E87412CA18DF444600CE5E16 /* gem-0.wav in Resources */,
+				E87412CC18DF444600CE5E16 /* gem-1.wav in Resources */,
+				E87412CE18DF444600CE5E16 /* grossini-generic.plist in Resources */,
+				E87412D018DF444700CE5E16 /* grossini-generic.png in Resources */,
+				E87412D218DF444700CE5E16 /* HelloCocosBuilder.ccb in Resources */,
+				E87412D418DF444700CE5E16 /* HelloCocosBuilder.ccbi in Resources */,
+				E87412D618DF444700CE5E16 /* jungle-left.png in Resources */,
+				E87412D818DF444700CE5E16 /* jungle-right.png in Resources */,
+				E87412DA18DF444700CE5E16 /* jungle.png in Resources */,
+				E87412DC18DF444700CE5E16 /* logo-icon.png in Resources */,
+				E87412DE18DF444700CE5E16 /* logo.png in Resources */,
+				E87412E018DF444700CE5E16 /* markerfelt24shadow.fnt in Resources */,
+				E87412E218DF444700CE5E16 /* markerfelt24shadow.png in Resources */,
+				E87412E418DF444700CE5E16 /* particle-fire.png in Resources */,
+				E87412E618DF444700CE5E16 /* particle-smoke.png in Resources */,
+				E87412E818DF444700CE5E16 /* particle-snow.png in Resources */,
+				E87412EA18DF444700CE5E16 /* particle-stars.png in Resources */,
+				E87412EC18DF444700CE5E16 /* scale-9-demo.png in Resources */,
+				E87412EE18DF444700CE5E16 /* CocosBuilderExample.ccbproj in Resources */,
+				E87412F018DF444700CE5E16 /* fileLookup.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5087E74817EB910900C73F5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
+				E87411C018DF42E500CE5E16 /* AccelerometerTest.lua in Resources */,
+				E87411C218DF42E500CE5E16 /* ActionManagerTest.lua in Resources */,
+				E87411C418DF42E500CE5E16 /* ActionsEaseTest.lua in Resources */,
+				E87411C618DF42E500CE5E16 /* ActionsProgressTest.lua in Resources */,
+				E87411C818DF42E500CE5E16 /* ActionsTest.lua in Resources */,
+				E87411CA18DF42E500CE5E16 /* AssetsManagerModule.lua in Resources */,
+				E87411CC18DF42E500CE5E16 /* AssetsManagerTest.lua in Resources */,
+				E87411CE18DF42E500CE5E16 /* BugsTest.lua in Resources */,
+				E87411D018DF42E500CE5E16 /* ClickAndMoveTest.lua in Resources */,
+				E87411D218DF42E500CE5E16 /* CocosDenshionTest.lua in Resources */,
+				E87411D418DF42E500CE5E16 /* CocoStudioArmatureTest.lua in Resources */,
+				E87411D618DF42E500CE5E16 /* CocoStudioGUITest.lua in Resources */,
+				E87411D818DF42E500CE5E16 /* CocoStudioSceneTest.lua in Resources */,
+				E87411DA18DF42E500CE5E16 /* acts.lua in Resources */,
+				E87411DC18DF42E500CE5E16 /* cons.lua in Resources */,
+				E87411DE18DF42E500CE5E16 /* eventDef.lua in Resources */,
+				E87411E018DF42E500CE5E16 /* CocoStudioTest.lua in Resources */,
+				E87411E218DF42E500CE5E16 /* controller.lua in Resources */,
+				E87411E418DF42E500CE5E16 /* CurrentLanguageTest.lua in Resources */,
+				E87411E618DF42E500CE5E16 /* DrawPrimitivesTest.lua in Resources */,
+				E87411E818DF42E500CE5E16 /* EffectsAdvancedTest.lua in Resources */,
+				E87411EA18DF42E500CE5E16 /* EffectsName.lua in Resources */,
+				E87411EC18DF42E500CE5E16 /* EffectsTest.lua in Resources */,
+				E87411EE18DF42E500CE5E16 /* CocosBuilderTest.lua in Resources */,
+				E87411F018DF42E500CE5E16 /* ExtensionTest.lua in Resources */,
+				E87411F218DF42E500CE5E16 /* WebProxyTest.lua in Resources */,
+				E87411F418DF42E500CE5E16 /* FontTest.lua in Resources */,
+				E87411F618DF42E500CE5E16 /* helper.lua in Resources */,
+				E87411F818DF42E500CE5E16 /* IntervalTest.lua in Resources */,
+				E87411FA18DF42E500CE5E16 /* KeypadTest.lua in Resources */,
+				E87411FC18DF42E500CE5E16 /* LabelTest.lua in Resources */,
+				E87411FE18DF42E500CE5E16 /* LabelTestNew.lua in Resources */,
+				E874120018DF42E500CE5E16 /* LayerTest.lua in Resources */,
+				E874120218DF42E500CE5E16 /* LuaBridgeTest.lua in Resources */,
+				E874120418DF42E500CE5E16 /* mainMenu.lua in Resources */,
+				E874120618DF42E500CE5E16 /* MenuTest.lua in Resources */,
+				E874120818DF42E500CE5E16 /* MotionStreakTest.lua in Resources */,
+				E874120A18DF42E500CE5E16 /* NewEventDispatcherTest.lua in Resources */,
+				E874120C18DF42E500CE5E16 /* NodeTest.lua in Resources */,
+				E874120E18DF42E500CE5E16 /* OpenGLTest.lua in Resources */,
+				E874121018DF42E500CE5E16 /* ParallaxTest.lua in Resources */,
+				E874121218DF42E500CE5E16 /* ParticleTest.lua in Resources */,
+				E874121418DF42E500CE5E16 /* PerformanceSpriteTest.lua in Resources */,
+				E874121618DF42E500CE5E16 /* PerformanceTest.lua in Resources */,
+				E874121818DF42E500CE5E16 /* PhysicsTest.lua in Resources */,
+				E874121A18DF42E500CE5E16 /* RenderTextureTest.lua in Resources */,
+				E874121C18DF42E500CE5E16 /* RotateWorldTest.lua in Resources */,
+				E874121E18DF42E500CE5E16 /* SceneTest.lua in Resources */,
+				E874122018DF42E500CE5E16 /* SpineTest.lua in Resources */,
+				E874122218DF42E500CE5E16 /* SpriteTest.lua in Resources */,
+				E874122418DF42E500CE5E16 /* testResource.lua in Resources */,
+				E874122618DF42E500CE5E16 /* Texture2dTest.lua in Resources */,
+				E874122818DF42E500CE5E16 /* TileMapTest.lua in Resources */,
+				E874122A18DF42E500CE5E16 /* Ball.lua in Resources */,
+				E874122C18DF42E500CE5E16 /* Paddle.lua in Resources */,
+				E874122E18DF42E500CE5E16 /* TouchesTest.lua in Resources */,
+				E874123018DF42E500CE5E16 /* TransitionsName.lua in Resources */,
+				E874123218DF42E500CE5E16 /* TransitionsTest.lua in Resources */,
+				E874123418DF42E500CE5E16 /* UserDefaultTest.lua in Resources */,
+				E874123618DF42E500CE5E16 /* VisibleRect.lua in Resources */,
+				E874123818DF42E500CE5E16 /* XMLHttpRequestTest.lua in Resources */,
+				E874123A18DF42E500CE5E16 /* ZwoptexTest.lua in Resources */,
+				E874127B18DF444600CE5E16 /* animated-grossini.plist in Resources */,
+				E874127D18DF444600CE5E16 /* animated-grossini.png in Resources */,
+				E874127F18DF444600CE5E16 /* btn-a-0.png in Resources */,
+				E874128118DF444600CE5E16 /* btn-a-1.png in Resources */,
+				E874128318DF444600CE5E16 /* btn-a-2.png in Resources */,
+				E874128518DF444600CE5E16 /* btn-b-0.png in Resources */,
+				E874128718DF444600CE5E16 /* btn-b-1.png in Resources */,
+				E874128918DF444600CE5E16 /* btn-b-2.png in Resources */,
+				E874128B18DF444600CE5E16 /* btn-back-0.png in Resources */,
+				E874128D18DF444600CE5E16 /* btn-back-1.png in Resources */,
+				E874128F18DF444600CE5E16 /* btn-test-0.png in Resources */,
+				E874129118DF444600CE5E16 /* btn-test-1.png in Resources */,
+				E874129318DF444600CE5E16 /* btn-test-2.png in Resources */,
+				E874129518DF444600CE5E16 /* burst.png in Resources */,
+				E874129718DF444600CE5E16 /* TestAnimations.ccb in Resources */,
+				E874129918DF444600CE5E16 /* TestAnimations.ccbi in Resources */,
+				E874129B18DF444600CE5E16 /* TestAnimationsSub.ccb in Resources */,
+				E874129D18DF444600CE5E16 /* TestAnimationsSub.ccbi in Resources */,
+				E874129F18DF444600CE5E16 /* TestButtons.ccb in Resources */,
+				E87412A118DF444600CE5E16 /* TestButtons.ccbi in Resources */,
+				E87412A318DF444600CE5E16 /* TestHeader.ccb in Resources */,
+				E87412A518DF444600CE5E16 /* TestHeader.ccbi in Resources */,
+				E87412A718DF444600CE5E16 /* TestLabels.ccb in Resources */,
+				E87412A918DF444600CE5E16 /* TestLabels.ccbi in Resources */,
+				E87412AB18DF444600CE5E16 /* TestMenus.ccb in Resources */,
+				E87412AD18DF444600CE5E16 /* TestMenus.ccbi in Resources */,
+				E87412AF18DF444600CE5E16 /* TestParticleSystems.ccb in Resources */,
+				E87412B118DF444600CE5E16 /* TestParticleSystems.ccbi in Resources */,
+				E87412B318DF444600CE5E16 /* TestScrollViews.ccb in Resources */,
+				E87412B518DF444600CE5E16 /* TestScrollViews.ccbi in Resources */,
+				E87412B718DF444600CE5E16 /* TestScrollViewsContentA.ccb in Resources */,
+				E87412B918DF444600CE5E16 /* TestScrollViewsContentA.ccbi in Resources */,
+				E87412BB18DF444600CE5E16 /* TestSprites.ccb in Resources */,
+				E87412BD18DF444600CE5E16 /* TestSprites.ccbi in Resources */,
+				E87412BF18DF444600CE5E16 /* TestTimelineCallback.ccb in Resources */,
+				E87412C118DF444600CE5E16 /* TestTimelineCallback.ccbi in Resources */,
+				E87412C318DF444600CE5E16 /* ccbParticleStars.png in Resources */,
+				E87412C518DF444600CE5E16 /* comic andy.ttf in Resources */,
+				E87412C718DF444600CE5E16 /* fileLookup.plist in Resources */,
+				E87412C918DF444600CE5E16 /* flower.jpg in Resources */,
+				E87412CB18DF444600CE5E16 /* gem-0.wav in Resources */,
+				E87412CD18DF444600CE5E16 /* gem-1.wav in Resources */,
+				E87412CF18DF444600CE5E16 /* grossini-generic.plist in Resources */,
+				E87412D118DF444700CE5E16 /* grossini-generic.png in Resources */,
+				E87412D318DF444700CE5E16 /* HelloCocosBuilder.ccb in Resources */,
+				E87412D518DF444700CE5E16 /* HelloCocosBuilder.ccbi in Resources */,
+				E87412D718DF444700CE5E16 /* jungle-left.png in Resources */,
+				E87412D918DF444700CE5E16 /* jungle-right.png in Resources */,
+				E87412DB18DF444700CE5E16 /* jungle.png in Resources */,
+				E87412DD18DF444700CE5E16 /* logo-icon.png in Resources */,
+				E87412DF18DF444700CE5E16 /* logo.png in Resources */,
+				E87412E118DF444700CE5E16 /* markerfelt24shadow.fnt in Resources */,
+				E87412E318DF444700CE5E16 /* markerfelt24shadow.png in Resources */,
+				E87412E518DF444700CE5E16 /* particle-fire.png in Resources */,
+				E87412E718DF444700CE5E16 /* particle-smoke.png in Resources */,
+				E87412E918DF444700CE5E16 /* particle-snow.png in Resources */,
+				E87412EB18DF444700CE5E16 /* particle-stars.png in Resources */,
+				E87412ED18DF444700CE5E16 /* scale-9-demo.png in Resources */,
+				E87412EF18DF444700CE5E16 /* CocosBuilderExample.ccbproj in Resources */,
+				E87412F118DF444700CE5E16 /* fileLookup.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
+				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
+				503AE10117EB989F00D1A890 /* main.m in Sources */,
+				E874114318DF3E4800CE5E16 /* lua_assetsmanager_test_sample.cpp in Sources */,
+				E874114D18DF408B00CE5E16 /* LuaObjectCBridgeTest.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5087E75617EB910900C73F5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5087E75717EB910900C73F5D /* AppDelegate.cpp in Sources */,
+				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
+				E874114418DF3E4800CE5E16 /* lua_assetsmanager_test_sample.cpp in Sources */,
+				E874114E18DF408B00CE5E16 /* LuaObjectCBridgeTest.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1AC6FB16180E9959004C840B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "cocos2dx Mac";
+			targetProxy = 1AC6FB15180E9959004C840B /* PBXContainerItemProxy */;
+		};
+		1AC6FB18180E9959004C840B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "cocos2dx-extensions Mac";
+			targetProxy = 1AC6FB17180E9959004C840B /* PBXContainerItemProxy */;
+		};
+		1AC6FB1A180E9959004C840B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "chipmunk Mac";
+			targetProxy = 1AC6FB19180E9959004C840B /* PBXContainerItemProxy */;
+		};
+		1AC6FB1C180E9959004C840B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CocosDenshion Mac";
+			targetProxy = 1AC6FB1B180E9959004C840B /* PBXContainerItemProxy */;
+		};
+		1AC6FB1E180E9963004C840B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "box2d Mac";
+			targetProxy = 1AC6FB1D180E9963004C840B /* PBXContainerItemProxy */;
+		};
+		1AC6FB25180E99E1004C840B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "cocos2dx iOS";
+			targetProxy = 1AC6FB24180E99E1004C840B /* PBXContainerItemProxy */;
+		};
+		1AC6FB27180E99E1004C840B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "cocos2dx-extensions iOS";
+			targetProxy = 1AC6FB26180E99E1004C840B /* PBXContainerItemProxy */;
+		};
+		1AC6FB29180E99E1004C840B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "chipmunk iOS";
+			targetProxy = 1AC6FB28180E99E1004C840B /* PBXContainerItemProxy */;
+		};
+		1AC6FB2B180E99E1004C840B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "box2d iOS";
+			targetProxy = 1AC6FB2A180E99E1004C840B /* PBXContainerItemProxy */;
+		};
+		1AC6FB2D180E99E1004C840B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CocosDenshion iOS";
+			targetProxy = 1AC6FB2C180E99E1004C840B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ios/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					USE_FILE32API,
+					CC_TARGET_OS_IPHONE,
+					"COCOS2D_DEBUG=1",
+					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../cocos2d/cocos/2d/platform/ios",
+					"$(SRCROOT)/../cocos2d/cocos/2d/platform/ios/Simulation",
+				);
+				INFOPLIST_FILE = ios/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "/Users/samxu/Documents/project/cocos_proj/TestLua/cocos2d/cocos/scripting/lua/bindings /Users/samxu/Documents/project/cocos_proj/TestLua/cocos2d/external/lua/lua/ /Users/samxu/Documents/project/cocos_proj/TestLua/cocos2d/external/lua/tolua";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ios/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					USE_FILE32API,
+					CC_TARGET_OS_IPHONE,
+					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../cocos2d/cocos/2d/platform/ios",
+					"$(SRCROOT)/../cocos2d/cocos/2d/platform/ios/Simulation",
+				);
+				INFOPLIST_FILE = ios/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "/Users/samxu/Documents/project/cocos_proj/TestLua/cocos2d/cocos/scripting/lua/bindings /Users/samxu/Documents/project/cocos_proj/TestLua/cocos2d/external/lua/lua/ /Users/samxu/Documents/project/cocos_proj/TestLua/cocos2d/external/lua/tolua";
+			};
+			name = Release;
+		};
+		5087E76D17EB910900C73F5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = mac/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					USE_FILE32API,
+					CC_TARGET_OS_MAC,
+					"COCOS2D_DEBUG=1",
+					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../cocos2d/cocos/2d/platform/mac",
+					"$(SRCROOT)/../cocos2d/external/glfw3/include/mac",
+				);
+				INFOPLIST_FILE = mac/Info.plist;
+				LIBRARY_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../cocos/2d/platform/ios $(SRCROOT)/../cocos/scripting/lua/bindings $(SRCROOT)/../external/lua/luajit/include $(SRCROOT)/../external/lua/tolua";
+			};
+			name = Debug;
+		};
+		5087E76E17EB910900C73F5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = mac/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					USE_FILE32API,
+					CC_TARGET_OS_MAC,
+					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../cocos2d/cocos/2d/platform/mac",
+					"$(SRCROOT)/../cocos2d/external/glfw3/include/mac",
+				);
+				INFOPLIST_FILE = mac/Info.plist;
+				LIBRARY_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../cocos/2d/platform/ios $(SRCROOT)/../cocos/scripting/lua/bindings $(SRCROOT)/../external/lua/luajit/include $(SRCROOT)/../external/lua/tolua";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../cocos2d",
+					"$(SRCROOT)/../cocos2d/cocos",
+					"$(SRCROOT)/../cocos2d/cocos/base",
+					"$(SRCROOT)/../cocos2d/cocos/physics",
+					"$(SRCROOT)/../cocos2d/cocos/math/kazmath/include",
+					"$(SRCROOT)/../cocos2d/cocos/2d",
+					"$(SRCROOT)/../cocos2d/cocos/gui",
+					"$(SRCROOT)/../cocos2d/cocos/network",
+					"$(SRCROOT)/../cocos2d/cocos/audio/include",
+					"$(SRCROOT)/../cocos2d/cocos/editor-support",
+					"$(SRCROOT)/../cocos2d/extensions",
+					"$(SRCROOT)/../cocos2d/external",
+					"$(SRCROOT)/../cocos2d/external/chipmunk/include/chipmunk",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../cocos2d/cocos/2d/platform/ios $(SRCROOT)/../cocos2d/cocos/scripting/lua/bindings $(SRCROOT)/../cocos2d/external/lua/luajit/include $(SRCROOT)/../cocos2d/external/lua/tolua";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../cocos2d",
+					"$(SRCROOT)/../cocos2d/cocos",
+					"$(SRCROOT)/../cocos2d/cocos/base",
+					"$(SRCROOT)/../cocos2d/cocos/physics",
+					"$(SRCROOT)/../cocos2d/cocos/math/kazmath/include",
+					"$(SRCROOT)/../cocos2d/cocos/2d",
+					"$(SRCROOT)/../cocos2d/cocos/gui",
+					"$(SRCROOT)/../cocos2d/cocos/network",
+					"$(SRCROOT)/../cocos2d/cocos/audio/include",
+					"$(SRCROOT)/../cocos2d/cocos/editor-support",
+					"$(SRCROOT)/../cocos2d/extensions",
+					"$(SRCROOT)/../cocos2d/external",
+					"$(SRCROOT)/../cocos2d/external/chipmunk/include/chipmunk",
+				);
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../cocos2d/cocos/2d/platform/ios $(SRCROOT)/../cocos2d/cocos/scripting/lua/bindings $(SRCROOT)/../cocos2d/external/lua/luajit/include $(SRCROOT)/../cocos2d/external/lua/tolua";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "TestLua iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5087E76C17EB910900C73F5D /* Build configuration list for PBXNativeTarget "TestLua Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5087E76D17EB910900C73F5D /* Debug */,
+				5087E76E17EB910900C73F5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TestLua" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

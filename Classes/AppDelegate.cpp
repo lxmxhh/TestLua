@@ -67,6 +67,8 @@ bool AppDelegate::applicationDidFinishLaunching()
         searchPaths.insert(searchPaths.begin(), "scenetest/LoadSceneEdtiorFileTest");
     }
 
+    searchPaths.insert(searchPaths.begin(), "/Users/samxu/Documents/project/cocos_proj/TestLua/Resources");
+    searchPaths.insert(searchPaths.begin(), "/Users/samxu/Documents/project/cocos_proj/TestLua/cocos2d/cocos/scripting/lua/script");
 #if CC_TARGET_PLATFORM == CC_PLATFORM_BLACKBERRY
     searchPaths.push_back("TestCppResources");
     searchPaths.push_back("script");
