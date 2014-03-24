@@ -3,6 +3,7 @@
 #include "CCLuaEngine.h"
 #include "SimpleAudioEngine.h"
 #include "lua_assetsmanager_test_sample.h"
+#include "HclcData.h"
 
 using namespace CocosDenshion;
 
@@ -76,6 +77,18 @@ bool AppDelegate::applicationDidFinishLaunching()
     FileUtils::getInstance()->setSearchPaths(searchPaths);
 
     pEngine->executeScriptFile("luaScript/controller.lua");
+    
+    
+    CCLOG("Str = %s",HclcData::sharedHD()->getLuaVarString("Test.lua","luaStr"));
+    CCLOG("Str2 %s",HclcData::sharedHD()->getLuaVarString("Test.lua","luaStr2"));
+    CCLOG("age = %s",HclcData::sharedHD()->getLuaVarOneOfTable("Test.lua", "luaTable","age"));
+    CCLOG("name = %s",HclcData::sharedHD()->getLuaVarOneOfTable("Test.lua", "luaTable","name"));
+    CCLOG("sex = %s",HclcData::sharedHD()->getLuaVarOneOfTable("Test.lua", "luaTable","sex"));
+    CCLOG("Table = %s",HclcData::sharedHD()->getLuaVarTable("Test.lua", "luaTable"));
+    CCLOG("Call Lua Function Back: %s",HclcData::sharedHD()->callLuaFunction("Test.lua", "luaLogString"));
+    
+    HclcData::sharedHD()->callCppFunction("Test.lua");
+    HclcData::sharedHD()->callLuaFunction("Test.lua", "call_Cpp");
     
     return true;
 }

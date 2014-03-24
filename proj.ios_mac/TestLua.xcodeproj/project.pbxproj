@@ -310,6 +310,10 @@
 		E87412EF18DF444700CE5E16 /* CocosBuilderExample.ccbproj in Resources */ = {isa = PBXBuildFile; fileRef = E874127818DF444600CE5E16 /* CocosBuilderExample.ccbproj */; };
 		E87412F018DF444700CE5E16 /* fileLookup.plist in Resources */ = {isa = PBXBuildFile; fileRef = E874127918DF444600CE5E16 /* fileLookup.plist */; };
 		E87412F118DF444700CE5E16 /* fileLookup.plist in Resources */ = {isa = PBXBuildFile; fileRef = E874127918DF444600CE5E16 /* fileLookup.plist */; };
+		E8DDFC0518E088EE00148497 /* HclcData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8DDFC0318E088EE00148497 /* HclcData.cpp */; };
+		E8DDFC0618E088EE00148497 /* HclcData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8DDFC0318E088EE00148497 /* HclcData.cpp */; };
+		E8DDFC0818E08A5E00148497 /* Test.lua in Resources */ = {isa = PBXBuildFile; fileRef = E8DDFC0718E08A5E00148497 /* Test.lua */; };
+		E8DDFC0918E08A5E00148497 /* Test.lua in Resources */ = {isa = PBXBuildFile; fileRef = E8DDFC0718E08A5E00148497 /* Test.lua */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -656,6 +660,9 @@
 		E874127718DF444600CE5E16 /* scale-9-demo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scale-9-demo.png"; sourceTree = "<group>"; };
 		E874127818DF444600CE5E16 /* CocosBuilderExample.ccbproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = CocosBuilderExample.ccbproj; sourceTree = "<group>"; };
 		E874127918DF444600CE5E16 /* fileLookup.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = fileLookup.plist; sourceTree = "<group>"; };
+		E8DDFC0318E088EE00148497 /* HclcData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HclcData.cpp; path = ../HclcData_TestLua/HclcData.cpp; sourceTree = "<group>"; };
+		E8DDFC0418E088EE00148497 /* HclcData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HclcData.h; path = ../HclcData_TestLua/HclcData.h; sourceTree = "<group>"; };
+		E8DDFC0718E08A5E00148497 /* Test.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Test.lua; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -770,6 +777,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				E8DDFBFC18E088AD00148497 /* LuaTestInterface */,
 				1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */,
 				15AA9C4015B7EC450033D6C2 /* Classes */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -850,6 +858,7 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E8DDFC0718E08A5E00148497 /* Test.lua */,
 				E874123B18DF444600CE5E16 /* cocosbuilderRes */,
 				E874115118DF42E500CE5E16 /* luaScript */,
 			);
@@ -1386,6 +1395,15 @@
 			path = ccb;
 			sourceTree = "<group>";
 		};
+		E8DDFBFC18E088AD00148497 /* LuaTestInterface */ = {
+			isa = PBXGroup;
+			children = (
+				E8DDFC0318E088EE00148497 /* HclcData.cpp */,
+				E8DDFC0418E088EE00148497 /* HclcData.h */,
+			);
+			name = LuaTestInterface;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1716,6 +1734,7 @@
 				E87412EC18DF444700CE5E16 /* scale-9-demo.png in Resources */,
 				E87412EE18DF444700CE5E16 /* CocosBuilderExample.ccbproj in Resources */,
 				E87412F018DF444700CE5E16 /* fileLookup.plist in Resources */,
+				E8DDFC0818E08A5E00148497 /* Test.lua in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1846,6 +1865,7 @@
 				E87412ED18DF444700CE5E16 /* scale-9-demo.png in Resources */,
 				E87412EF18DF444700CE5E16 /* CocosBuilderExample.ccbproj in Resources */,
 				E87412F118DF444700CE5E16 /* fileLookup.plist in Resources */,
+				E8DDFC0918E08A5E00148497 /* Test.lua in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1862,6 +1882,7 @@
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				E874114318DF3E4800CE5E16 /* lua_assetsmanager_test_sample.cpp in Sources */,
 				E874114D18DF408B00CE5E16 /* LuaObjectCBridgeTest.mm in Sources */,
+				E8DDFC0518E088EE00148497 /* HclcData.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1873,6 +1894,7 @@
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				E874114418DF3E4800CE5E16 /* lua_assetsmanager_test_sample.cpp in Sources */,
 				E874114E18DF408B00CE5E16 /* LuaObjectCBridgeTest.mm in Sources */,
+				E8DDFC0618E088EE00148497 /* HclcData.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

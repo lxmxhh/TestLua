@@ -9,19 +9,20 @@
 #include "HclcData.h"
 #include "CCLuaEngine.h"
 
-bool HclcData::_isFirst;
-HclcData* HclcData::_shared;
+bool HclcData::_isFirst = false;
+HclcData* HclcData::_shared = NULL;
 
 HclcData* HclcData::sharedHD(){
     if(!_isFirst){
         _shared = new HclcData();
+        _isFirst = true;
     }
     return _shared;
 }
 
 const char* HclcData::getLuaVarString(const char* luaFileName,const char* varName){
     
-    lua_State*  ls = CCLuaEngine::defaultEngine()->getLuaStack()->getLuaState();
+    lua_State*  ls = LuaEngine::getInstance()->getLuaStack()->getLuaState();
     
     int isOpen = luaL_dofile(ls, getFileFullPath(luaFileName));
     if(isOpen!=0){
@@ -46,7 +47,7 @@ const char* HclcData::getLuaVarString(const char* luaFileName,const char* varNam
 
 const char* HclcData::getLuaVarOneOfTable(const char* luaFileName,const char* varName,const char* keyName){
     
-    lua_State*  ls = CCLuaEngine::defaultEngine()->getLuaStack()->getLuaState();
+    lua_State*  ls = LuaEngine::getInstance()->getLuaStack()->getLuaState();
     
     int isOpen = luaL_dofile(ls, getFileFullPath(luaFileName));
     if(isOpen!=0){
@@ -72,7 +73,7 @@ const char* HclcData::getLuaVarOneOfTable(const char* luaFileName,const char* va
 }
 
 const char* HclcData::getLuaVarTable(const char* luaFileName,const char* varName){
-    lua_State*  ls = CCLuaEngine::defaultEngine()->getLuaStack()->getLuaState();
+    lua_State*  ls = LuaEngine::getInstance()->getLuaStack()->getLuaState();
     
     int isOpen = luaL_dofile(ls, getFileFullPath(luaFileName));
     if(isOpen!=0){
@@ -102,7 +103,7 @@ const char* HclcData::getLuaVarTable(const char* luaFileName,const char* varName
 }
 
 const char* HclcData::callLuaFunction(const char* luaFileName,const char* functionName){
-    lua_State*  ls = CCLuaEngine::defaultEngine()->getLuaStack()->getLuaState();
+    lua_State*  ls = LuaEngine::getInstance()->getLuaStack()->getLuaState();
     
     int isOpen = luaL_dofile(ls, getFileFullPath(luaFileName));
     if(isOpen!=0){
@@ -130,7 +131,7 @@ const char* HclcData::callLuaFunction(const char* luaFileName,const char* functi
 
 void  HclcData::callCppFunction(const char* luaFileName){
     
-    lua_State*  ls = CCLuaEngine::defaultEngine()->getLuaStack()->getLuaState();
+    lua_State*  ls = LuaEngine::getInstance()->getLuaStack()->getLuaState();
     
     /*
      Lua调用的C++的函数必须是静态的
@@ -162,11 +163,11 @@ int HclcData::cppFunction(lua_State* ls){
 }
 
 const char* HclcData::getFileFullPath(const char* fileName){
-    return CCFileUtils::sharedFileUtils()->fullPathForFilename(fileName).c_str();
+    return FileUtils::getInstance()->fullPathForFilename(fileName).c_str();
 }
 
 HclcData::~HclcData(){
     
     CC_SAFE_DELETE(_shared);
-    _shared=NULL;
+    _shared = NULL;
 }
