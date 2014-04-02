@@ -67,6 +67,8 @@ public:
 private:
     static int cppFunction(lua_State* ls);
     
+    static int othercppFunciton(lua_State* ls);
+    
     static bool _isFirst;
     static HclcData* _shared;
     const char* getFileFullPath(const char* fileName);

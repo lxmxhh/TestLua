@@ -21,26 +21,28 @@ HclcData* HclcData::sharedHD(){
 }
 
 const char* HclcData::getLuaVarString(const char* luaFileName,const char* varName){
-    
+    //获取堆栈
     lua_State*  ls = LuaEngine::getInstance()->getLuaStack()->getLuaState();
-    
+    //    加载脚本
     int isOpen = luaL_dofile(ls, getFileFullPath(luaFileName));
     if(isOpen!=0){
         CCLOG("Open Lua Error: %i", isOpen);
         return NULL;
     }
-    
+//    清空堆栈
     lua_settop(ls, 0);
+//    取变量varName的值放到栈顶
     lua_getglobal(ls, varName);
-    
-    int statesCode = lua_isstring(ls, 1);
+//    栈底是否为string
+    int statesCode = lua_isstring(ls, -1);
     if(statesCode!=1){
-        CCLOG("Open Lua Error: %i", statesCode);
+        CCLOG("type Error: %i", statesCode);
         return NULL;
     }
-    
-    const char* str = lua_tostring(ls, 1);
-    lua_pop(ls, 1);
+
+//    获取栈底字符串
+    const char* str = lua_tostring(ls, -1);
+    lua_pop(ls, -1);
     
     return str;
 }
@@ -137,6 +139,7 @@ void  HclcData::callCppFunction(const char* luaFileName){
      Lua调用的C++的函数必须是静态的
      */
     lua_register(ls, "cppFunction", cppFunction);
+    lua_register(ls, "othercppFunciton", othercppFunciton);
     
     int isOpen = luaL_dofile(ls, getFileFullPath(luaFileName));
     if(isOpen!=0){
@@ -160,6 +163,15 @@ int HclcData::cppFunction(lua_State* ls){
      返给Lua值个数
      */
     return 2;
+}
+
+int HclcData::othercppFunciton(lua_State* ls)
+{
+    int luaBool = (int)lua_toboolean(ls, 1 );
+    CCLOG("========= lua bool is: %d =========", luaBool);
+    
+    lua_pushinteger(ls, 100);
+    return 1;
 }
 
 const char* HclcData::getFileFullPath(const char* fileName){

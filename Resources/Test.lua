@@ -1,4 +1,4 @@
-luaStr  = "I' m Himi"
+luaStr  = 65
  
 luaStr2 = "are you ok!"
  
@@ -13,4 +13,9 @@ end
 function call_Cpp(_logStr,_logNum,_logBool)
     num,str = cppFunction(999,"I'm a lua string")
     print("从cpp函数中获得两个返回值：",num,str)
+end
+
+function call_other_cpp(_str1, _count)
+	num = othercppFunciton(true)
+	print("=====ccc:", num)
 end

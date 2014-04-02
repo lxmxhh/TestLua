@@ -89,6 +89,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     
     HclcData::sharedHD()->callCppFunction("Test.lua");
     HclcData::sharedHD()->callLuaFunction("Test.lua", "call_Cpp");
+    HclcData::sharedHD()->callLuaFunction("Test.lua", "call_other_cpp");
     
     return true;
 }
