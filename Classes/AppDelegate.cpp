@@ -78,6 +78,8 @@ bool AppDelegate::applicationDidFinishLaunching()
 
     pEngine->executeScriptFile("luaScript/controller.lua");
     
+    pEngine->executeScriptFile("Test.lua");
+    
     
     CCLOG("Str = %s",HclcData::sharedHD()->getLuaVarString("Test.lua","luaStr"));
     CCLOG("Str2 %s",HclcData::sharedHD()->getLuaVarString("Test.lua","luaStr2"));

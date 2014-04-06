@@ -1,3 +1,5 @@
+require "luaScript/helper"
+
 luaStr  = 65
  
 luaStr2 = "are you ok!"
@@ -19,3 +21,5 @@ function call_other_cpp(_str1, _count)
 	num = othercppFunciton(true)
 	print("=====ccc:", num)
 end
+
+cclog("脚本hello开始运行... ")
